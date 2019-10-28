@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 
@@ -48,10 +48,9 @@ scale=1.0">
     <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
 
 
-<title>Wildfire Incidents</title>
-<link rel='stylesheet' id='caweb-core-style-css'  href='https://california.azureedge.net/cdt/statetemplate/5.5.3/css/cagov.core.min.css?ver=1.4.12' type='text/css' media='all' />
-<link rel='stylesheet' id='caweb-color-style-css'  href='sweetalert.css' type='text/css' media='all' />
-<link rel='stylesheet' id='caweb-color-style-css'  href='https://california.azureedge.net/cdt/statetemplate/5.5.3/css/colorscheme-mono.css?ver=1.4.12' type='text/css' media='all' />
+    <title>Incident Overviews</title>
+<link rel='stylesheet' id='caweb-core-style-css'  href='https://california.azureedge.net/cdt/statetemplate/5.5.8/css/cagov.core.min.css?ver=1.4.12' type='text/css' media='all' />
+<link rel='stylesheet' id='caweb-color-style-css'  href='https://california.azureedge.net/cdt/statetemplate/5.5.8/css/colorscheme-mono.css?ver=1.4.12' type='text/css' media='all' />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
@@ -96,6 +95,16 @@ scale=1.0">
 	.nav-full-width-icons .utility-header .header-organization-banner {
 		padding-left: initial;
 	}
+
+    .text-2-5rem {font-size:2.5rem;}
+
+    .brd-top {
+        border-top:1px solid;
+    }
+    
+    .brd-gray {
+        border-color:gray;
+    }
 	
 	
 </style>	
@@ -105,7 +114,7 @@ scale=1.0">
 </script>
 
 </head>
-<body class="home page-template-default page page-id-2 primary et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_divi_theme et-db et_minified_js et_minified_css divi_builder title_not_displayed v5 sidebar_not_displayed sticky_nav"  >
+<body>
 
 
 
@@ -171,36 +180,39 @@ scale=1.0">
         <div class="navigation-search">
             <!-- Include Navigation -->
             <!-- Navigation Full Width with Icons -->
-<nav id="navigation" class="main-navigation megadropdown ">
-        <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
-             <li class="nav-item">
-                <a href="psps.html" class="first-level-link" ><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
-            </li>
-			
-			<li class="nav-item ">
-                <a href="fireincidents.html" class="first-level-link" aria-hidden="true" ><span class="ca-gov-icon-warning-triangle" aria-hidden="true"></span>Wildfire Incidents </a>
-                
-            </li>
-			 <li class="nav-item">
-                <a href="transportation.html" class="first-level-link"  ><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-            </li>
-           <li class="nav-item">
-                <a href="health.html"class="first-level-link" ><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
-            </li>
+<nav id="navigation" class="main-navigation megadropdown auto-highlight">
+    <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
+        <li class="nav-item ">
+            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
 
-            <li class="nav-item">
-                <a href="resources.html#local"class="first-level-link" ><span class="ca-gov-icon-hand" aria-hidden="true"></span>Local Resources</a>
-            </li>
-            <li class="nav-item">
-                <a href="resources.html#state"class="first-level-link" ><span class="ca-gov-icon-ca-state" aria-hidden="true"></span>State Resources</a>
-            </li>
-            <li class="nav-item">
-                <a href="preparedness.html" class="first-level-link" ><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
-            </li>
-            <!--<li class="nav-item" id="nav-item-search">
-                <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
-            </li>-->
-        </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+        </li>
+
+        <li class="nav-item active">
+            <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
+        </li>
+        <li class="nav-item">
+            <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
+        </li>
+        <!--<li class="nav-item" id="nav-item-search">
+        <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+    </li>-->
+    </ul>
 </nav>
 
 
@@ -239,262 +251,148 @@ scale=1.0">
 
 <div id="page-container">
 <div id="main-content" class="main-content">
-<main class="main-primary">
-	
-	<div class="section section-default" style="background: #e6e6e6; ">
-    <div class="container">
-		
-		
+    <main class="main-primary">
 
-		
-        <!-- columns and or content here -->
-		<h1 class="text-center" style="color:#545351;">Wildfire Incidents</h1>
-		<h4 class="text-center">
-		Find wildfire incidents, air quality, road closures and evacuation information on this page. 
-		</h4>
-		
-		<!--ICON BLOCKS-->
-<div class="group p-t-80">
-    <div class="third m-b-60">
-        <!-- Icon Blocks -->
-        <div class="shadow2 section-default text-center p-x-md p-b-lg">
-            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                <i class="ca-gov-icon-fire"></i>
-            </span>
-            <h3 class="h3 m-b-lg">CalFIRE Incident Map</h3>
-            <p class="m-b"></p>
-            <a class="btn btn-primary text-uppercase font-size-sm" href="https://www.fire.ca.gov/incidents/" target="_blank">Visit Fire Incident Map</a>
+        <div class="section-default p-y-md"><div class="container"><h1 class="m-y-0">Incident Overviews</h1></div></div>
+
+
+        <div class="container">
+            <!--ICON BLOCKS-->
+            <div class="group p-t-80">
+                <div class="third m-b-60">
+                    <!-- Icon Blocks -->
+                    <div class="shadow2 section-default text-center p-x-md p-b-lg">
+                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                            <i class="ca-gov-icon-fire"></i>
+                        </span>
+                        <h3 class="h3 m-t-0">Wildfires </h3>
+                        <p class="m-b">For more information on current wildfires burning in California visit the CAL FIRE interactive incident webpage</p>
+                        <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.fire.ca.gov/incidents/" target="_blank">Visit Fire Incident Map</a>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+                <div class="third m-b-60">
+                    <!-- Icon Blocks -->
+                    <div class="shadow2 section-default text-center p-x-md p-b-lg">
+                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                            <i class="ca-gov-icon-info-bubble"></i>
+                        </span>
+                        <h3 class="h3 m-t-0">Sign-up to Emergency Alerts </h3>
+                        <p class="m-b">To sign-up to receive alerts for your specific local agencies regarding emergency information text your zip code to <strong>888777</strong> to opt-in</p>
+                        <a class="btn btn-primary btn-lg text-uppercase font-size-sm" aria-label="Sign Up For Emergency Alerts" href="https://www.nixle.com/" target="_blank">Sign up</a>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+                <div class="third m-b-60">
+                    <!-- Icon Blocks -->
+                    <div class="shadow2 section-default text-center p-x-md p-b-lg">
+                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                            <i class="ca-gov-icon-online-services"></i>
+                        </span>
+                        <h3 class="h3 m-t-0">Sign-up to CAL FIRE News </h3>
+                        <p class="m-b">Sign up to receive CAL FIRE news releases and incident information specific to your county</p>
+                        <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.fire.ca.gov/programs/communications/news-release-subscription/" aria-label="Sign Up For CAL FIRE News" target="_blank">Sign up</a>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+            </div><!-- End Group-->
+            <div class="group">
+                <div class="third m-b-60">
+                    <!-- Icon Blocks -->
+                    <div class="shadow2 section-default  text-center p-x-md p-b-lg">
+                        <span class="icon-block bg-blue-gradient rounded-50x" style="font-size:50px; ">
+                            <i class="ca-gov-icon-cloud-services"></i>
+                        </span>
+                        <h3 class="h3 m-b-lg">Air quality index information</h3>
+                        <p class="m-b"></p>
+                        <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.airnow.gov/index.cfm?action=topics.smoke_wildfires" target="_blank">Check your air quality</a>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+                <div class="third m-b-60">
+                    <!-- Icon Blocks -->
+                    <div class="shadow2 section-default  text-center p-x-md p-b-lg">
+                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                            <i class="ca-gov-icon-roadways"></i>
+                        </span>
+                        <h3 class="h3 m-b-lg">Road closures</h3>
+                        <p class="m-b"></p>
+                        <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="http://quickmap.dot.ca.gov/" target="_blank">Check Road Conditions</a>
+                    </div>
+                    <!-- End Icon Blocks -->
+                </div>
+            </div>
+
         </div>
-        <!-- End Icon Blocks -->
-    </div>
-    <div class="third m-b-60">
-        <!-- Icon Blocks -->
-        <div class="shadow2 section-default  text-center p-x-md p-b-lg">
-            <span class="icon-block bg-blue-gradient rounded-50x" style="font-size:50px; ">
-                <i class="ca-gov-icon-cloud-services"></i>
-            </span>
-            <h3 class="h3 m-b-lg">Air quality index information</h3>
-            <p class="m-b"></p>
-            <a class="btn btn-primary text-uppercase font-size-sm" href="https://ww2.arb.ca.gov/smoke-current-wildfires" target="_blank">Check your air quality</a>
+
+
+        <div class="section-primary">
+            <div class="container p-y-lg text-center">
+                <div class="offset-md-2 col-md-8">
+                <h2>Resources Preposition</h2>
+                <p>With elevated fire conditions in the forecast for parts of California, Cal OES Fire and Rescue staff have coordinated with counties to preposition fire apparatus and personnel to augment local resources in preparation for the upcoming significant weather events.</p>
+                <a class="btn btn-lg btn-outline-light m-t-md" href="http://www.oesnews.com/updated-cal-oes-fire-and-rescue-pre-position-resources-in-anticipation-of-critical-fire-weather/" target="_blank">Learn More <span class="sr-only">about Resources Preposition:</span></a>
+                </div>
+            </div>
+
+
         </div>
-        <!-- End Icon Blocks -->
-    </div>
-    <div class="third m-b-60">
-        <!-- Icon Blocks -->
-        <div class="shadow2 section-default  text-center p-x-md p-b-lg">
-            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                <i class="ca-gov-icon-roadways"></i>
-            </span>
-            <h3 class="h3 m-b-lg">Road closures</h3>
-            <p class="m-b"></p>
-            <a class="btn btn-primary text-uppercase font-size-sm" href="http://quickmap.dot.ca.gov/" target="_blank">Check Road Conditions</a>
+
+
+        <div class="container p-y-lg">
+            
+                <h2>State of Emergency Declarations and Federal Aid</h2>
+
+                <p>
+                    Governor Gavin Newsom has declared a statewide emergency due to the effects of unprecedented high-wind events which have resulted in fires and evacuations across the state.
+                </p>
+
+                <p>
+                    The Kincade Fire in Sonoma County has burned more than 30,000 acres to date, and has led to the evacuation of almost 200,000 people and threatened hundreds of structures. The Tick Fire in Southern California has also destroyed structures, threatened homes and critical infrastructure, and caused the evacuation of tens of thousands of residents. As of today, there are over 3,000 local, state and federal personnel, including first responders, assisting with the Kincade Fire alone
+                </p>
+                <p>
+                    The Governor has also secured Fire Management Assistance Grants to help ensure the availability of resources to fight the Kincade and Tick fires and enable local, state and tribal agencies to recover eligible costs.
+                </p>
+
+                <p>For more information on public safety power shutdown outages in your area, please visit the sites below. NOTE: The State of California does not run these websites is not responsible for the information on these pages.  </p>
+
+                <ul class="list-primary lead">
+                    <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page?WT.mc_id=Vanity_pspsupdates" target="_blank">PGE</a></li>
+                    <li><a href="https://www.sce.com/safety/wildfire/psps" target="_blank">SCE</a></li>
+                    <li><a href="https://www.sdge.com/wildfire-safety/public-safety-power-shutoffs" target="_blank">SDGE</a></li>
+                </ul>
+         
         </div>
-        <!-- End Icon Blocks -->
+
+<div class="section-impact">
+    <div class="container p-y-lg text-center">
+        <div class="offset-md-2 col-md-8">
+            <h2>CPUC PSPS Actions</h2>
+            <p class="lead">The California Public Utilities Commission (CPUC) regulates the State's investor-owned electric utilities, notably Pacific Gas and Electric Company (PG&E), Southern California Edison, and San Diego Gas & Electric (SDG&E). They may shut off electric power, referred to as "de-energization" or Public Safety Power Shut-offs (PSPS). Learn more about the current regulations, read the latest PSPS after-action filings and view regulatory oversight actions taken by the CPUC:</p>
+            <a class="btn btn-lg btn-outline-light m-t-md" href="http://www.oesnews.com/updated-cal-oes-fire-and-rescue-pre-position-resources-in-anticipation-of-critical-fire-weather/" target="_blank">View the Latest CPUC PSPS Actions</a>
+
+        </div>
     </div>
-</div><!-- End Group-->
-		
-		
-		
-    </div>
-		
-		
-			</div> <!-- .et_pb_column -->
-	
-		
-		<div class="section section-default" >
-    <div class="container">
-		
-		
-		
-		<div class="three-quarters">
-
-		  <h3><strong>Evacuation Notices</strong></h3>
-			  <ul>
-			    <li><a href="https://socoemergency.org/" target="_blank" rel="noopener">Sonoma County Evacuation Orders – Kincade Fire</a></li>
-			    <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page#crc" >
-			      <p><a href="https://socoemergency.org/category/warnings-and-updates/" target="_blank">Warnings &amp; Updates</a></p>
-			    </a></li>
-		      </ul>
-				
-	    </div>
-		
-		
-		
-		</div>
-	</div>
-		
 
 
-		
-		
-	<span class="return-top hidden-print"></span></main>
+</div>
+
+
+
+        <span class="return-top hidden-print"></span>
+    </main>
 </div> <!-- #main-content -->
 
 
 
 <!-- Global Footer -->
-<footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li></ul></div><div class="quarter"></div></div></div>
+<footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
                                                     <!-- Copyright Statement -->
                                         <div class="copyright">
                                         <div class="container" > Copyright &copy;
                                         <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
-			<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.3/js/cagov.core.min.js?ver=1.4.12"></script>
-
-<script id="ca_custom_js">jQuery(document).ready(function() {
-
-    setTimeout(function() {
-  $('.gsc-search-box').find("input[type=text]").each(function(ev)
-  {
-      if(!$(this).val()) {
-           $(this).attr("placeholder", "Search Services, Agencies, and More...");
-      }
- //var SearchInput = $(this).val();
-//alert(SearchInput);
+			<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
 
 
-
-    });
-  }, 1500);
-});
-
-
-                                                                                                                                                                                   
-</script>
-<script type="text/javascript" src="https://california.azureedge.net/cdt/CAgovPortal/js/sweetalert.min.js"></script>
-<script>
-function confirmRedirect(tester, link) {
-	if (tester) {
-		if(!(tester.indexOf("external") == -1)) {
-			swal({
-				title: "You are leaving this website",
-				text: "You are now leaving the CA.gov portal and being directed to the specific California government resource or website that you have requested.",
-				//type: "warning",
-				showCancelButton: true,
-				confirmButtonColor: '#339933',
-				confirmButtonText: 'Redirect Me',
-				cancelButtonColor: '#CC6666',
-				cancelButtonText: "Stay Here",
-				closeOnConfirm: false,
-				closeOnCancel: true
-			},
-			function (isConfirm) {
-				if (isConfirm) {
-					$(location).attr("href", link);
-				}
-			});
-		}
-		else {
-			$(location).attr("href", link);
-		}
-
-	}
-	else {
-		$(location).attr("href", link);
-	}
-}
-</script>
-<script>
-	var fire1 = 0;
-	var fire2 = 0;
-	var out1 = 0;
-	var out2 = 0;
-	
-	require(["esri/tasks/QueryTask","esri/tasks/support/Query","esri/tasks/support/StatisticDefinition"], 
-	
-	function (QueryTask, Query, StatisticDefinition) {
-	
-		var fireURL = "https://services.arcgis.com/BLN4oKB0N1YSgvY8/ArcGIS/rest/services/Fires_Dataset_(CalOES_Tracked)(Public)/FeatureServer/0/";
-		
-		var fireQueryTask = new QueryTask({
-			url: fireURL
-		});
-					
-		var fireQuery = new Query();
-		
-		var statisticDefinition1 = new StatisticDefinition();
-		statisticDefinition1.statisticType = "sum";
-		statisticDefinition1.onStatisticField = "Acres";
-		statisticDefinition1.outStatisticFieldName = "Out_Sum_Acres";
-
-		var statisticDefinition2 = new StatisticDefinition();
-		statisticDefinition2.statisticType = "count";
-		statisticDefinition2.onStatisticField = "OBJECTID";
-		statisticDefinition2.outStatisticFieldName = "Out_Count_OES_Tracked_Fires";
-
-		
-		fireQuery.outStatistics = [statisticDefinition1,statisticDefinition2];
-		fireQuery.Where = ["1=1"];
-		fireQuery.outFields = ["*"];
-		
-		fireQueryTask.execute(fireQuery).then(function(results){
-		var fireInfo = results.features[0].attributes;
-
-		fire1 = fireInfo.Out_Count_OES_Tracked_Fires;
-		fire2 = fireInfo.Out_Sum_Acres;
-		});
-	
-	
-		var outageURL = "https://services.arcgis.com/BLN4oKB0N1YSgvY8/ArcGIS/rest/services/Power_Outages_(View)/FeatureServer/0/";
-		
-		var outageQueryTask = new QueryTask({
-			url: outageURL
-		});
-					
-		var outageQuery = new Query();
-		
-		var statisticDefinition3 = new StatisticDefinition();
-		statisticDefinition3.statisticType = "sum";
-		statisticDefinition3.onStatisticField = "ImpactedCustomers";
-		statisticDefinition3.outStatisticFieldName = "Out_ImpactedCustomers";
-
-		var statisticDefinition4 = new StatisticDefinition();
-		statisticDefinition4.statisticType = "count";
-		statisticDefinition4.onStatisticField = "ObjectId";
-		statisticDefinition4.outStatisticFieldName = "Out_CountOfOutages";
-
-		
-		outageQuery.outStatistics = [statisticDefinition3,statisticDefinition4];
-		outageQuery.Where = ["OBJECTID <> 0"];
-		outageQuery.outFields = ["OBJECTID"];
-		
-		outageQueryTask.execute(outageQuery).then(function(results2){
-		console.log(results2);
-		var outageInfo = results2.features[0].attributes;
-		console.log(outageInfo);
-		out1 = outageInfo.Out_CountOfOutages;
-		out2 = outageInfo.Out_ImpactedCustomers;
-		});
-	});
-	
-
-	setTimeout(function () {
-		var counter1 = document.getElementsByClassName("percent-value");
-		
-		
-		
-		
-		
-		counter1[0].innerHTML = addCommas(fire1);
-		counter1[1].innerHTML = addCommas(fire2);
-
-		counter1[2].innerHTML =  addCommas(out1);
-		counter1[3].innerHTML =  addCommas(out2); 
-	}, 2000);
-	
-	function addCommas(nStr)
-{
-	nStr += '';
-	x = nStr.split('.');
-	x1 = x[0];
-	x2 = x.length > 1 ? '.' + x[1] : '';
-	var rgx = /(\d+)(\d{3})/;
-	while (rgx.test(x1)) {
-		x1 = x1.replace(rgx, '$1' + ',' + '$2');
-	}
-	return x1 + x2;
-}
-	
-	
-	</script>
 </body>
 </html>

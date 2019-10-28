@@ -1,4 +1,5 @@
 ﻿
+
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -46,7 +47,7 @@ scale=1.0">
     <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
 
 
-    <title>Preparedness</title>
+    <title>Disclaimer</title>
     <link rel='stylesheet' id='caweb-core-style-css' href='https://california.azureedge.net/cdt/statetemplate/5.5.8/css/cagov.core.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='caweb-color-style-css' href='https://california.azureedge.net/cdt/statetemplate/5.5.8/css/colorscheme-mono.css' type='text/css' media='all' />
 
@@ -100,10 +101,6 @@ scale=1.0">
         }
     </style>
 
-    <script type="text/javascript">
-        var defaultActiveLink = "Wildfire Incidents";
-    </script>
-
 </head>
 <body>
 
@@ -154,9 +151,9 @@ scale=1.0">
                 <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
             </span>
             <div class="mobile-control-group main-nav-icons float-right">
-                <button class="mobile-control toggle-search float-left m-l-md">
+                <!--<button class="mobile-control toggle-search float-left m-l-md">
                     <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
-                </button>
+                </button>-->
                 <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="nav_list" data-toggle="collapse" data-target="#navigation" role="tab" aria-selected="false">
                     <span></span>
                     <span></span>
@@ -173,36 +170,37 @@ scale=1.0">
             <!-- Navigation Full Width with Icons -->
             <nav id="navigation" class="main-navigation megadropdown ">
                 <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
-                    <li class="nav-item ">
-                        <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+					        <li class="nav-item ">
+            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
 
-                    </li>
+        </li>
 
-                    <li class="nav-item">
-                        <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
-                    </li>
+        <li class="nav-item">
+            <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
+        </li>
 
-                    <li class="nav-item">
-                        <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-                    </li>
+        <li class="nav-item">
+            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+        </li>
 
-                    <li class="nav-item">
-                        <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
-                    </li>
+        <li class="nav-item">
+            <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
+        </li>
 
-                    <li class="nav-item">
-                        <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
-                    </li>
+        <li class="nav-item">
+            <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
+        </li>
 
-                    <li class="nav-item">
-                        <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
-                    </li>
+        <li class="nav-item">
+            <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
+        </li>
+        <li class="nav-item">
+            <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
+        </li>
+
                     <!--<li class="nav-item" id="nav-item-search">
-        <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
-    </li>-->
+                        <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+                    </li>-->
                 </ul>
             </nav>
 
@@ -223,14 +221,14 @@ scale=1.0">
                 </script>
                 <gcse:searchbox-only resultsUrl="/serp.html" enableAutoComplete="true"></gcse:searchbox-only>-->
                 <!--Custom Google Search ID Script can be found inside of serp.html file -->
-                <div class="container">
+                <!--<div class="container">
                     <form id="Search" class="pos-rel" action="/serp.html">
                         <span class="sr-only" id="SearchInput" aria-hidden="true">Custom Google Search</span>
                         <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Search this website" class="height-50 border-0 p-x-sm w-100 search-textfield" tabindex="-1" aria-hidden="true">
                         <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent" tabindex="-1" aria-hidden="true"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
                         <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset" tabindex="-1" aria-hidden="true"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
                     </form>
-                </div>
+                </div>-->
             </div>
 
         </div>
@@ -244,120 +242,16 @@ scale=1.0">
     <div id="main-content" class="main-content">
         <main class="main-primary">
 
-            <div class="section-default p-y-md"><div class="container"><h1 class="m-y-0">Preparedness</h1></div></div>
-
-
-            <div class="container">
-                <!--ICON BLOCKS-->
-                <div class="group p-t-80">
-                    <div class="third m-b-60">
-                        <!-- Icon Blocks -->
-                        <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                                <i class="ca-gov-icon-shield-check" aria-hidden="true"></i>
-                            </span>
-                            <h3 class="h3 m-t-0">Disaster Preparedness </h3>
-                            <p class="m-b">Find more information on disaster preparedness at ready.gov</p>
-                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.ready.gov/" target="_blank">Visit ready.gov</a>
-                        </div>
-                        <!-- End Icon Blocks -->
-                    </div>
-                    <div class="third m-b-60">
-                        <!-- Icon Blocks -->
-                        <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                                <i class="ca-gov-icon-fire" aria-hidden="true"></i>
-                            </span>
-                            <h3 class="h3 m-t-0">Wildfire Preparedness </h3>
-                            <p class="m-b">Find more information on fire preparedness at readyforwildfire.org</p>
-                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="http://readyforwildfire.org" target="_blank">Visit readyforwildfire.org</a>
-                        </div>
-                        <!-- End Icon Blocks -->
-                    </div>
-                    <div class="third m-b-60">
-                        <!-- Icon Blocks -->
-                        <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                                <i class="ca-gov-icon-charge" aria-hidden="true"></i>
-                            </span>
-                            <h3 class="h3 m-t-0">Public Safety Power Shutoff </h3>
-                            <p class="m-b">Learn more about how to be prepared for Public Safety Power Shutoff</p>
-                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://prepareforpowerdown.com/" target="_blank">Public Safety Power Shutoff</a>
-                        </div>
-                        <!-- End Icon Blocks -->
-                    </div>
-
-
-                </div>
+            <div class="section-default p-y-md"><div class="container"><h1 class="m-y-0">Disclaimer</h1></div></div>
+			<div class="section">
+                <div class="container">
+                    The State of California website contains hypertext links to external websites. The State or California is not responsible for the accessibility or accuracy of the information contained in these external websites, and the State of California does not endorse any entity or product for which a link may be provided. External links are provided as a convenience for the users of this site. Once you leave the State of California website via a link to an external site, the State of California privacy and security policies no longer apply.
                 </div>
 
-                <div class="section-primary">
-                    <div class="container p-y-lg text-center">
-                        <div class="offset-md-2 col-md-8">
-                            <h2>Ready, Set, GO</h2>
-                            <p class="lead">Ready, Set, GO provides step-by-step checklists and information on <a href="https://www.readyforwildfire.org/prepare-for-wildfire/get-set/" target="_blank">how to be set when a wildfire strikes</a> and what you and your <a href="https://www.readyforwildfire.org/prepare-for-wildfire/go-evacuation-guide/" target="_blank">family should do when told to GO!</a> It also provides information about what to do when allowed to <a href="https://www.readyforwildfire.org/post-wildfire/" target="_blank">return home after a wildfire</a>.  </p>
-                            
-                            
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <div class="container p-y-lg">
-
-                    <div class="container">
-                        <!--ICON BLOCKS-->
-                        <div class="group p-t-80">
-                            <div class="third m-b-60">
-                                <!-- Icon Blocks -->
-                                <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                                    <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                                        <i class="ca-gov-icon-fire" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h3 m-t-0">Sign-up to CAL FIRE News </h3>
-                                    <p class="m-b">Sign up to receive CAL FIRE news releases and incident information specific to your county</p>
-                                    <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.fire.ca.gov/programs/communications/news-release-subscription/" target="_blank" aria-label="Sign Up For CAL FIRE News">Sign up</a>
-                                </div>
-                                <!-- End Icon Blocks -->
-                            </div>
-                            <div class="third m-b-60">
-                                <!-- Icon Blocks -->
-                                <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                                    <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                                        <i class="ca-gov-icon-info-bubble" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h3 m-t-0">Sign-up to Emergency Alerts </h3>
-                                    <p class="m-b">To sign-up to receive alerts for your specific local agencies regarding emergency information text your zip code to <strong>888777</strong> to opt-in</p>
-                                    <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.nixle.com/" aria-label="Sign Up For Emergency Alerts" target="_blank">Sign up</a>
-                                </div>
-                                <!-- End Icon Blocks -->
-                            </div>
-
-                            <div class="third m-b-60">
-                                <!-- Icon Blocks -->
-                                <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                                    <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                                        <i class="ca-gov-icon-download-cloud" aria-hidden="true"></i>
-                                    </span>
-                                    <h3 class="h3 m-t-0">Ready For Wildfire app </h3>
-                                    <p class="m-b">Download the CAL FIRE Ready For Wildfire app to sign up for wildfire notifications based on your zip code. App is available in both the Apple Store and Playstore.</p>
-                                    <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.readyforwildfire.org/more/ready-for-wildfire-app/" target="_blank">Download App</a>
-                                </div>
-                                <!-- End Icon Blocks -->
-                            </div>
-
-                        </div><!-- End Group-->
-                  
+                
+              
 
                     </div>
-
-
-                </div>
-
-
-
 
                 <span class="return-top hidden-print"></span>
 </main>
