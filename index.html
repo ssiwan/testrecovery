@@ -1,0 +1,935 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+
+<!--[if (gt IE 9)]><!-->
+
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<head >
+
+<script type='text/javascript' src='jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='jquery-migrate-3.0.0.min.js'></script>
+    <meta charset="utf-8">
+
+
+    <meta name="Author" content="State of California" />
+
+
+    <meta name="Description" content="State of California" />
+
+    <meta name="Keywords" content="California, government" />
+
+    <!-- Use highest compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=11">
+
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+
+    <!-- for Blackberry, AvantGo -->
+    <meta name="MobileOptimized" content="320">
+
+    <!-- for Windows mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+		<!-- Google Meta-->
+		<meta name="google-site-verification" content="" />
+
+    <!-- Google Fonts -->
+  	<link href='https://fonts.googleapis.com/css?family=Asap+Condensed:400,600|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <!-- selectivizr.com, emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
+
+
+<title>CA.gov | California Information</title>
+<link rel='stylesheet' id='caweb-core-style-css'  href='https://california.azureedge.net/cdt/statetemplate/5.5.3/css/cagov.core.min.css?ver=1.4.12' type='text/css' media='all' />
+<link rel='stylesheet' id='caweb-color-style-css'  href='sweetalert.css' type='text/css' media='all' />
+<link rel='stylesheet' id='caweb-color-style-css'  href='https://california.azureedge.net/cdt/statetemplate/5.5.3/css/colorscheme-orangecounty.css?ver=1.4.12' type='text/css' media='all' />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+
+<script src="selectivizr-min.js"></script>
+
+<![endif]-->
+
+
+<!-- Activate ClearType for Mobile IE -->
+
+<!--[if IE]>
+
+<meta http-equiv="cleartype" content="on">
+
+<![endif]-->
+
+
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 8]>
+
+  <script src="html5shiv.min.js"></script>
+
+  <script src="respond.min.js"></script>
+
+<![endif]-->
+
+</head>
+<body class="home page-template-default page page-id-2 primary et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_footer_columns4 et_header_style_left et_pb_pagebuilder_layout et_divi_theme et-db et_minified_js et_minified_css divi_builder title_not_displayed v5 sidebar_not_displayed sticky_nav"  >
+
+
+
+<header role="banner" id="header" class="global-header fixed nav-full-width-icons">
+        <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+
+        
+        <!-- Include Branding -->
+         <!-- Utility header branding (goes with full width navigation with icons) -->
+<div class="utility-header">
+    <div class="container">
+<!--        <div class="header-cagov-logo"><a href="/"><img src="/images/Ca-Gov-Logo-Gold.svg" alt="CA.gov"></a></div> -->
+        <div class="header-organization-banner"><a href="/"><img src="ca.gov-portal-logo-bear.png" alt="Organization Title"></a></div>
+
+
+        <div class="settings-links">
+            <ul class="utility-links">
+                <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Settings Bar -->
+        <div class="site-settings section section-standout collapsed collapse" id="siteSettings" style="">
+    <div class="container p-y">
+
+
+        <div class="btn-group btn-group-justified-sm" aria-label="contrastMode">
+            <div class="btn-group"><button type="button" class="btn btn-standout disableHighContrastMode">Default</button></div>
+            <div class="btn-group"><button type="button" class="btn btn-standout enableHighContrastMode">High Contrast</button></div>
+        </div>
+
+        <div class="btn-group" aria-label="textSizeMode">
+            <div class="btn-group"><button type="button" class="btn btn-standout resetTextSize">Reset</button></div>
+            <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <span class="sr-only">Increase</span><span class="ca-gov-icon-plus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+            <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <span class="sr-only">Decrease</span><span class="ca-gov-icon-minus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+        </div>
+        <button type="button" class="close collapsed" data-toggle="collapse" data-target="#siteSettings" aria-label="Close" aria-expanded="false" id="ui-collapse-391"><span aria-hidden="true">×</span></button>
+    </div>
+</div>
+
+        <!-- Include Mobile Controls -->
+        <!-- mobile navigation controls -->
+<div class="mobile-controls">
+    <span class="mobile-control-group mobile-header-icons">
+    	<!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+    </span>
+    <div class="mobile-control-group main-nav-icons float-right">
+        <button class="mobile-control toggle-search float-left m-l-md">
+            <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
+        </button>
+        <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="nav_list" data-toggle="collapse" data-target="#navigation" role="tab" aria-selected="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Menu</span>
+        </button>
+
+    </div>
+</div>
+
+        <div class="navigation-search">
+            <!-- Include Navigation -->
+            <!-- Navigation Full Width with Icons -->
+<nav id="navigation" class="main-navigation megadropdown auto-highlight">
+        <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
+            <li class="nav-item ">
+                <a href="/sample/" class="first-level-link" aria-hidden="true" ><span class="ca-gov-icon-fire" aria-hidden="true"></span> Wildfires</a>
+                
+            </li>
+            <li class="nav-item">
+                <a href="/about.html" class="first-level-link" ><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoff</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/structure.html" class="first-level-link" id="accessible-menu-1572229058994-4"><span class="ca-gov-icon-warning-triangle" aria-hidden="true"></span>Incidents</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://github.com/Office-of-Digital-Innovation" target="_blank" class="first-level-link" id="accessible-menu-1572229058994-5"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Local Resources</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://webstandards.ca.gov/" target="_blank" class="first-level-link" id="accessible-menu-1572229058995-6"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="/contact.html" class="first-level-link" id="accessible-menu-1572229058995-7"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
+            </li>
+            <!--<li class="nav-item" id="nav-item-search">
+                <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+            </li>-->
+        </ul>
+</nav>
+
+            <div id="head-search" class="search-container in" aria-hidden="true" style="top: 86px;">
+                <!-- Include Search -->
+                <!-- Google Custom Search - /ssi/search.html-->
+<!--Uncomment if you prefer to use original google search box.
+    (be advided that original custom search box is not meeting WCAG accessibility standards)-->
+<!--<script type="text/javascript">
+    var cx = '001779225245372747843:9s-idxui5pk';// Step 7: Update this value with your search engine unique ID. Submit a request to the CDT Service Desk if you don't already know your unique search engine ID.
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script');
+    s[s.length - 1].parentNode.insertBefore(gcse, s[s.length - 1]);
+</script>
+<gcse:searchbox-only resultsUrl="/serp.html" enableAutoComplete="true"></gcse:searchbox-only>-->
+<!--Custom Google Search ID Script can be found inside of serp.html file -->
+<div class="container">
+    <form id="Search" class="pos-rel" action="/serp.html">
+        <span class="sr-only" id="SearchInput" aria-hidden="true">Custom Google Search</span>
+        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Search this website" class="height-50 border-0 p-x-sm w-100 search-textfield" tabindex="-1" aria-hidden="true">
+        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent" tabindex="-1" aria-hidden="true"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
+        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset" tabindex="-1" aria-hidden="true"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
+    </form>
+</div>
+            </div>
+
+        </div>
+
+        <div class="header-decoration"></div>
+    </header>
+	
+
+<!--
+<header role="banner" id="header" class="global-header fixed"  >
+<div id="skip-to-content"><a href="#main-content" class="skip-link">Skip to Main Content</a></div>
+<div class="location-settings section section-standout collapse collapsed " id="locationSettings">
+    <div class="container p-y">
+        <button type="button" class="close" data-toggle="collapse" data-target="#locationSettings" aria-expanded="false" aria-controls="locationSettings" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="form-group form-inline">
+            <label for="locationZipCode">Saving your location allows us to provide you with more relevant information.</label>
+            <input type="input" class="form-control" id="locationZipCode" placeholder="Zip Code">
+            <button type="button" class="btn btn-primary">Set Location</button>
+        </div>
+    </div>
+</div>
+
+<div class="utility-header ">
+    <div class="container">
+      <div class="group flex-row">
+            <div class="social-media-links">
+
+					<a href="default.html" class="ca-gov-icon-home" style="padding-left:5px;"><span class="sr-only">Home page</span></a>     </div>
+			<div class="settings-links hidden-print">
+                  <button class="btn btn-xs btn-primary" data-toggle="collapse" data-target="#siteSettings" aria-expanded="false" aria-controls="siteSettings"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button>
+            </div> 
+            						  
+        </div>          
+    </div>
+</div>
+<div class="site-settings section section-standout collapse collapsed" role="alert" id="siteSettings">
+    <div class="container  p-y">
+        <button type="button" class="close" data-toggle="collapse" data-target="#siteSettings" aria-expanded="false" aria-controls="siteSettings" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+        <div class="btn-group btn-group-justified-sm" role="group" aria-label="contrastMode">
+            <div class="btn-group"><button type="button" class="btn btn-primary disableHighContrastMode">Default</button></div>
+            <div class="btn-group"><button type="button" class="btn btn-primary enableHighContrastMode">High Contrast</button></div>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="textSizeMode">
+            <div class="btn-group"><button type="button" class="btn btn-primary resetTextSize">Reset</button></div>
+            <div class="btn-group"><button type="button" class="btn btn-primary increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <small class="ca-gov-icon-plus-line"></small></span></button></div>
+            <div class="btn-group"><button type="button" class="btn btn-primary decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <small class="ca-gov-icon-minus-line"></small></span></button></div>
+        </div>
+               
+               
+            
+    </div>
+</div><div class="branding">
+  
+     <div class="header-organization-banner"><a href="default.html"><img src="ca.gov-portal-logo-bear.png" alt="Organization Title" /></a></div>
+
+</div>
+<div class="mobile-controls">
+		<div class="mobile-control-group main-nav-icons pull-right">
+			<button id="nav-icon3" class="mobile-control toggle-menu float-right" aria-expanded="false" aria-controls="navigation" data-toggle="collapse" data-target="#navigation">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span class="sr-only">Menu</span>
+			</button>
+		</div>
+</div>
+
+        <div class="navigation-search">
+
+<nav id="navigation" class="main-navigation megadropdown hidden-print"><div style="font-size: 2.5em;font-weight: bold;padding-top:10px;">California Information</div></nav>
+																	
+																	
+																	
+
+
+        </div>
+
+
+        <div class="header-decoration hidden-print"></div>
+
+</header>
+-->
+
+<div id="page-container">
+<div id="main-content" class="main-content">
+<main class="main-primary">
+	
+	<div class="section section-understated">
+    <div class="container">
+        <!-- columns and or content here -->
+		<h1 class="text-center">Power Outage and Fire Recovery Resources</h1>
+    </div>
+		
+		<div class="container">
+				
+				
+				
+				
+					<div class="et_pb_row et_pb_row_1">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_4 et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0 et_pb_bg_layout_light et_pb_text_align_left">
+				
+				
+				<div class="et_pb_text_inner"><p><strong><span style="font-size: 14pt;">Strong wind events in California often lead to power outages and wildfires.&nbsp;Below is a list of online resources that provide the latest, up to date information about either.&nbsp; The following can help you know if your power is about to be shut off, what time that might be, and if there are any fires you should be made aware of. This information will be updated each day as needed.&nbsp;</span></strong></p></div>
+			</div> <!-- .et_pb_text -->
+			</div> <!-- .et_pb_column -->
+				
+				
+			</div> <!-- .et_pb_row -->
+							
+			</div>
+		
+		<div class="section section-understated">
+    <div class="container">
+		<!--Icon Image Blocks-->
+<div class="group">
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+           <a href="#" class="">
+                <div class="block-icon">
+                    <span class="ca-gov-icon-charge" style="font-size: 6rem;" aria-hidden="true"></span>
+                </div>
+			   <h3 class="h4 m-b-sm">Public Safety Power Shutoff (PSPS)</h3></a>
+       
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="ca-gov-icon-fire" style="font-size: 6rem;" aria-hidden="true"></span>
+                </div>
+				<h3 class="h4 m-b-sm">Wildfire Information</h3></a>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="ca-gov-icon-warning-triangle" style="font-size: 6rem;" aria-hidden="true"></span>
+                </div>
+             
+         
+            <h3 class="h4 m-b-sm">Incident Overviews</h3>   </a>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+</div><!-- End group -->
+		
+		
+		<!--Icon Image Blocks-->
+<div class="group">
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="ca-gov-icon-hand" style="font-size: 6rem;" aria-hidden="true"></span>
+                </div>
+				<h3 class="h4 m-b-sm">State and Local Resources</h3></a>
+       
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="ca-gov-icon-briefcase" style="font-size: 6rem;" aria-hidden="true"></span>
+                </div>
+				<h3 class="h4 m-b-sm">Employment</h3></a>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="ca-gov-icon-medical-case" style="font-size: 6rem;" aria-hidden="true"></span>
+                </div>
+				<h3 class="h4 m-b-sm">Health Services</h3></a>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+</div><!-- End group -->
+		
+				<!--Icon Image Blocks-->
+<div class="group">
+    <div class="third m-b-lg">
+		<!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="circle-icon ca-gov-icon-people" aria-hidden="true"></span>
+                </div>
+				<h3 class="h4 m-b-sm">Shelters/Housing</h3></a>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+        
+    </div>
+    <div class="third m-b-lg">
+		<!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="circle-icon ca-gov-icon-people" aria-hidden="true"></span>
+                </div>
+            <h3 class="h4 m-b-sm">Preparedness</h3></a>
+       
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+        
+    </div>
+    <div class="third m-b-lg">
+        <!-- Icon Blocks -->
+        <div class="text-center">
+            <a href="#" class="">
+                <div class="block-icon">
+                    <span class="circle-icon ca-gov-icon-people" aria-hidden="true"></span>
+                </div>
+				<h3 class="h4 m-b-sm">Donations</h3></a>
+            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+        </div>
+        <!-- End Icon Blocks -->
+    </div>
+</div><!-- End group -->
+		
+		
+		
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<!-- 		
+<div id="serviceDataHolder" ></div>
+<div class="section">
+<div class="container">
+<div class="group">
+<div class="quarter text-center"> 
+	<div class="percent"><p><span class="percent-value" style="font-size: 72px;color:#ec8e00;"></span>
+	<span class="percent-sign"></span></p>  </div>
+    <h2 class="title">Number of Active Fires</h2>
+	<canvas height="0" width="0"></canvas><canvas height="0" width="0"></canvas>
+</div>
+	
+<div class="quarter text-center">
+	<div class="percent"><p><span class="percent-value" style="font-size: 72px;color:#ec8e00;"></span>
+	<span class="percent-sign"></span></p>  </div>
+	<h2 class="title">Acres Burned</h2>
+	<canvas height="0" width="0"></canvas><canvas height="0" width="0"></canvas>
+</div>
+
+<div class="quarter text-center">
+	<div class="percent"><p><span class="percent-value" style="font-size: 72px;color:#ec8e00;"></span>
+	<span class="percent-sign"></span></p></div>
+	<h2 class="title">Number of Active Power Outages</h2>
+	<canvas height="0" width="0"></canvas><canvas height="0" width="0"></canvas>
+</div>
+<div class="quarter text-center">				
+
+<div class="percent"><p><span class="percent-value" style="font-size: 72px;color:#ec8e00;"></span>
+<span class="percent-sign"></span></p></div>
+<h2 class="title">Number of Customers Affected </h2>
+<canvas height="0" width="0"></canvas><canvas height="0" width="0"></canvas></div></div>
+</div>
+	</div>	
+-->
+
+</div>
+	
+	
+
+
+	
+	
+	
+
+	
+	
+
+<article id="main-items">
+<script src="https://california.azureedge.net/cdt/CAgovPortal/js/cagovapplets.js" type="text/javascript"></script>
+<script>
+   
+
+  function myFunction() {
+
+
+processJsonData.showHomePageServices(4,'featuredServicesListing',31,38,1122,20,'en','/service.html','/agency.html');
+
+                                                            }
+
+                                                            setTimeout(myFunction, 750);
+</script>
+
+<div class="section section-understated collapsed" style="color:#000000; background-color: #000000;height:1px;overflow:hidden;font-size:1px;" id="featuredServicesListing" >
+ <div class="service-group clearfix" style=" background-color: #000000">
+ 
+ <div id="featured-service-tab-1" tabindex="0" class="service-tile" data-tile-id="panel-1" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+ <div id="featured-service-tab-2" tabindex="0" class="service-tile" data-tile-id="panel-2" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+ <div id="featured-service-tab-3" tabindex="0" class="service-tile" data-tile-id="panel-3" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+ <div id="featured-service-tab-4" tabindex="0" class="service-tile" data-tile-id="panel-4" style="background-size: cover;height: 320px; background-color: #161616;"></div>
+ 
+
+ 
+ <div id="featured-service-panel-1" class="service-tile-panel" data-tile-id="panel-1" style="background-color:#909090;"></div>
+ <div id="featured-service-panel-2" class="service-tile-panel" data-tile-id="panel-2" style="background-color:#909090;"></div>
+ <div id="featured-service-panel-3" class="service-tile-panel" data-tile-id="panel-3" style="background-color:#909090;"></div>
+ <div id="featured-service-panel-4" class="service-tile-panel" data-tile-id="panel-4" style="background-color:#909090;"></div>
+  
+	
+
+<div class="more-button" style=" background-color: #000000">
+<div class="more-content fake-service-group" style="filter: blur(6px);"></div>
+<a href="#more" class="btn-more inverse"><span class="more-title">More Disaster Relief Services</span><span class="ca-gov-icon-arrow-down more-icon" aria-hidden="true"></span></a>
+</div>
+</div>
+	
+	
+	<div class="section section-default">
+                <div class="container">
+                    <div class="row">
+                        <div class="half">
+                            <!-- Start Card -->
+                            <div class="card card-default">
+                                <div class="card-block" id="collapseCALHR" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                    <div class="row" role="presentation">
+                                        <div class="col-md-2 col-xs-4" role="presentation">
+                                            <img class="img-responsive" src="sample/images/logo-calhr.png" alt="">
+                                        </div>
+                                        <div class="col-md-10 col-xs-8" role="presentation">
+                                            <a href="" class="lead" itemprop="name">Department of Human Resources</a>
+                                            <div class="row" role="presentation">
+                                                <div class="col-md-7" role="presentation">
+                                                    <p>Etiam porta sem malesuada magna mollis euismod. Morbi leo risus.</p>
+                                                    <div class="collapse collapseCALHR" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-384" aria-hidden="true">
+                                                        <p itemprop="description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+                                                        <p class="other">
+                                                            General Information: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Hearing Impaired: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Fax <span itemprop="faxNumber">(916)323-5400</span><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5" role="presentation">
+                                                    <a href="" class="btn btn-secondary btn-block btn-sm">Agency Details</a>
+                                                    <div class="collapse collapseCALHR" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-384" aria-hidden="true">
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Contact Agency</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Show on Map</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Live Chat</a>
+                                                        <ul class="list-inline list-unstyled social">
+                                                            <li class="list-inline-item"><a href=""><span class="ca-gov-icon-share-twitter" aria-hidden="true"><span class="sr-only">Twitter CalHR</span></span></a></li>
+                                                            <li class="list-inline-item"><a href=""><span class="ca-gov-icon-share-facebook" aria-hidden="true"><span class="sr-only">Facebook CalHR</span></span></a></li>
+                                                            <li class="list-inline-item"><a href=""><span class="ca-gov-icon-share-googleplus" aria-hidden="true"><span class="sr-only">Google+ CalHR</span></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center m-b">
+                                    <a href="javascript:;" role="tab" data-toggle="collapse" data-parent="#collapseCALHR" aria-expanded="false" data-target=".collapseCALHR" aria-selected="false" id="ui-collapse-384" tabindex="-1">
+                                        <span class="toggle-more" aria-expanded="false"></span><span class="sr-only">Open</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                            <!-- Start Card -->
+                            <div class="card card-default">
+                                <div class="card-block" id="collapseEDD" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                    <div class="row" role="presentation">
+                                        <div class="col-md-2 col-xs-4" role="presentation">
+                                            <img class="img-responsive" src="sample/images/logo-edd.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-10 col-xs-8" role="presentation">
+                                            <a href="" class="lead" itemprop="name">Employment Development Department</a>
+                                            <div class="row" role="presentation">
+                                                <div class="col-md-7" role="presentation">
+                                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam auctor fringilla.</p>
+                                                    <div class="collapse collapseEDD" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-784" aria-hidden="true">
+                                                        <p itemprop="description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+                                                        <p class="other">
+                                                            General Information: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Hearing Impaired: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Fax <span itemprop="faxNumber">(916)323-5400</span><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5" role="presentation">
+                                                    <a href="" class="btn btn-secondary btn-block btn-sm">Agency Details</a>
+                                                    <div class="collapse collapseEDD" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-784" aria-hidden="true">
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Contact Agency</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Show on Map</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Live Chat</a>
+                                                        <ul class="list-inline list-unstyled social">
+                                                            <li><a href=""><span class="ca-gov-icon-share-twitter" aria-hidden="true"><span class="sr-only">Twitter EDD</span></span></a></li>
+                                                            <li><a href=""><span class="ca-gov-icon-share-facebook" aria-hidden="true"><span class="sr-only">Facebook EDD</span></span></a></li>
+                                                            <li><a href=""><span class="ca-gov-icon-share-googleplus" aria-hidden="true"><span class="sr-only">Google+ EDD</span></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center m-b">
+                                    <a href="javascript:;" role="tab" data-toggle="collapse" data-parent="#collapseEDD" aria-expanded="false" data-target=".collapseEDD" aria-selected="false" id="ui-collapse-784" tabindex="-1">
+                                        <span class="toggle-more" aria-expanded="false"></span><span class="sr-only">Open</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                        </div>
+
+                        <div class="half">
+                            <!-- Start Card -->
+                            <div class="card card-default">
+                                <div class="card-block" id="collapseSCIF" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                    <div class="row" role="presentation">
+                                        <div class="col-md-2 col-xs-4" role="presentation">
+                                            <img class="img-responsive" src="sample/images/logo-scif.jpg" alt="">
+                                        </div>
+                                        <div class="col-md-10 col-xs-8" role="presentation">
+                                            <a href="" class="lead" itemprop="name">State Compensation Insurance Fund</a>
+                                            <div class="row" role="presentation">
+                                                <div class="col-md-7" role="presentation">
+                                                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. </p>
+                                                    <div class="collapse collapseSCIF" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-103" aria-hidden="true">
+                                                        <p itemprop="description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+                                                        <p class="other">
+                                                            General Information: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Hearing Impaired: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Fax <span itemprop="faxNumber">(916)323-5400</span><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5" role="presentation">
+                                                    <a href="" class="btn btn-secondary btn-block btn-sm">Agency Details</a>
+                                                    <div class="collapse collapseSCIF" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-103" aria-hidden="true">
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Contact Agency</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Show on Map</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Live Chat</a>
+                                                        <ul class="list-inline list-unstyled social">
+                                                            <li><a href=""><span class="ca-gov-icon-share-twitter" aria-hidden="true"><span class="sr-only">Twitter SCIF</span></span></a></li>
+                                                            <li><a href=""><span class="ca-gov-icon-share-facebook" aria-hidden="true"><span class="sr-only">Facebook SCIF</span></span></a></li>
+                                                            <li><a href=""><span class="ca-gov-icon-share-googleplus" aria-hidden="true"><span class="sr-only">Google+ SCIF</span></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center m-b">
+                                    <a href="javascript:;" role="tab" data-toggle="collapse" data-parent="#collapseSCIF" aria-expanded="false" data-target=".collapseSCIF" aria-selected="false" id="ui-collapse-103" tabindex="-1">
+                                        <span class="toggle-more" aria-expanded="false"></span><span class="sr-only">Open</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                            <!-- Start Card -->
+                            <div class="card card-default">
+                                <div class="card-block" id="collapse5678" itemscope="" itemtype="http://schema.org/Organization" role="tablist" aria-multiselectable="true">
+                                    <div class="row" role="presentation">
+                                        <div class="col-md-2 col-xs-4" role="presentation">
+                                            <img class="img-responsive" src="sample/images/logo-dmv.png" alt="">
+                                        </div>
+                                        <div class="col-md-10 col-xs-8" role="presentation">
+                                            <a href="" class="lead" itemprop="name">Department of Motor Vehicles</a>
+                                            <div class="row" role="presentation">
+                                                <div class="col-md-7" role="presentation">
+                                                    <p>Some short teaser content. Aenean lacinia bibendum consectetur.</p>
+                                                    <div class="collapse collapse5678" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-614" aria-hidden="true">
+                                                        <p itemprop="description">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</p>
+                                                        <p class="other">
+                                                            General Information: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Hearing Impaired: <span itemprop="telephone">(916)323-5400</span><br>
+                                                            Fax <span itemprop="faxNumber">(916)323-5400</span><br>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5" role="presentation">
+                                                    <a href="" class="btn btn-secondary btn-block btn-sm">Agency Details</a>
+                                                    <div class="collapse collapse5678" role="tabpanel" tabindex="-1" aria-labelledby="ui-collapse-614" aria-hidden="true">
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Contact Agency</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Show on Map</a>
+                                                        <a href="" class="btn btn-secondary btn-block btn-sm">Live Chat</a>
+                                                        <ul class="list-inline list-unstyled social">
+                                                            <li><a href=""><span class="ca-gov-icon-share-twitter" aria-hidden="true"><span class="sr-only">Twitter DMV</span></span></a></li>
+                                                            <li><a href=""><span class="ca-gov-icon-share-facebook" aria-hidden="true"><span class="sr-only">Facebook DMV</span></span></a></li>
+                                                            <li><a href=""><span class="ca-gov-icon-share-googleplus" aria-hidden="true"><span class="sr-only">Google+ DMV</span></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center m-b">
+                                    <a href="javascript:;" role="tab" data-toggle="collapse" data-parent="#collapse5678" aria-expanded="false" data-target=".collapse5678" aria-selected="false" id="ui-collapse-614" tabindex="-1">
+                                        <span class="toggle-more" aria-expanded="false"></span><span class="sr-only">Open</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                        </div>
+                    </div>
+                    <div class="text-center m-t"><a href="" class="btn btn-secondary">See More</a></div>
+                </div>
+            </div>
+	
+	<br>
+
+	
+	
+	
+	</div>
+	<span class="return-top hidden-print"></span></main>
+</div> <!-- #main-content -->
+
+</div>
+
+<!-- Global Footer -->
+<footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li></ul></div><div class="quarter"></div></div></div>
+                                                    <!-- Copyright Statement -->
+                                        <div class="copyright">
+                                        <div class="container" > Copyright &copy;
+                                        <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
+			<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.3/js/cagov.core.min.js?ver=1.4.12"></script>
+
+<script id="ca_custom_js">jQuery(document).ready(function() {
+
+    setTimeout(function() {
+  $('.gsc-search-box').find("input[type=text]").each(function(ev)
+  {
+      if(!$(this).val()) {
+           $(this).attr("placeholder", "Search Services, Agencies, and More...");
+      }
+ //var SearchInput = $(this).val();
+//alert(SearchInput);
+
+
+
+    });
+  }, 1500);
+});
+
+
+                                                                                                                                                                                   
+</script>
+<script type="text/javascript" src="https://california.azureedge.net/cdt/CAgovPortal/js/sweetalert.min.js"></script>
+<script>
+function confirmRedirect(tester, link) {
+	if (tester) {
+		if(!(tester.indexOf("external") == -1)) {
+			swal({
+				title: "You are leaving this website",
+				text: "You are now leaving the CA.gov portal and being directed to the specific California government resource or website that you have requested.",
+				//type: "warning",
+				showCancelButton: true,
+				confirmButtonColor: '#339933',
+				confirmButtonText: 'Redirect Me',
+				cancelButtonColor: '#CC6666',
+				cancelButtonText: "Stay Here",
+				closeOnConfirm: false,
+				closeOnCancel: true
+			},
+			function (isConfirm) {
+				if (isConfirm) {
+					$(location).attr("href", link);
+				}
+			});
+		}
+		else {
+			$(location).attr("href", link);
+		}
+
+	}
+	else {
+		$(location).attr("href", link);
+	}
+}
+</script>
+<script src="https://js.arcgis.com/4.12/"></script> 
+<script>
+	var fire1 = 0;
+	var fire2 = 0;
+	var out1 = 0;
+	var out2 = 0;
+	
+	require(["esri/tasks/QueryTask","esri/tasks/support/Query","esri/tasks/support/StatisticDefinition"], 
+	
+	function (QueryTask, Query, StatisticDefinition) {
+	
+		var fireURL = "https://services.arcgis.com/BLN4oKB0N1YSgvY8/ArcGIS/rest/services/Fires_Dataset_(CalOES_Tracked)(Public)/FeatureServer/0/";
+		
+		var fireQueryTask = new QueryTask({
+			url: fireURL
+		});
+					
+		var fireQuery = new Query();
+		
+		var statisticDefinition1 = new StatisticDefinition();
+		statisticDefinition1.statisticType = "sum";
+		statisticDefinition1.onStatisticField = "Acres";
+		statisticDefinition1.outStatisticFieldName = "Out_Sum_Acres";
+
+		var statisticDefinition2 = new StatisticDefinition();
+		statisticDefinition2.statisticType = "count";
+		statisticDefinition2.onStatisticField = "OBJECTID";
+		statisticDefinition2.outStatisticFieldName = "Out_Count_OES_Tracked_Fires";
+
+		
+		fireQuery.outStatistics = [statisticDefinition1,statisticDefinition2];
+		fireQuery.Where = ["1=1"];
+		fireQuery.outFields = ["*"];
+		
+		fireQueryTask.execute(fireQuery).then(function(results){
+		var fireInfo = results.features[0].attributes;
+
+		fire1 = fireInfo.Out_Count_OES_Tracked_Fires;
+		fire2 = fireInfo.Out_Sum_Acres;
+		});
+	
+	
+		var outageURL = "https://services.arcgis.com/BLN4oKB0N1YSgvY8/ArcGIS/rest/services/Power_Outages_(View)/FeatureServer/0/";
+		
+		var outageQueryTask = new QueryTask({
+			url: outageURL
+		});
+					
+		var outageQuery = new Query();
+		
+		var statisticDefinition3 = new StatisticDefinition();
+		statisticDefinition3.statisticType = "sum";
+		statisticDefinition3.onStatisticField = "ImpactedCustomers";
+		statisticDefinition3.outStatisticFieldName = "Out_ImpactedCustomers";
+
+		var statisticDefinition4 = new StatisticDefinition();
+		statisticDefinition4.statisticType = "count";
+		statisticDefinition4.onStatisticField = "ObjectId";
+		statisticDefinition4.outStatisticFieldName = "Out_CountOfOutages";
+
+		
+		outageQuery.outStatistics = [statisticDefinition3,statisticDefinition4];
+		outageQuery.Where = ["OBJECTID <> 0"];
+		outageQuery.outFields = ["OBJECTID"];
+		
+		outageQueryTask.execute(outageQuery).then(function(results2){
+		console.log(results2);
+		var outageInfo = results2.features[0].attributes;
+		console.log(outageInfo);
+		out1 = outageInfo.Out_CountOfOutages;
+		out2 = outageInfo.Out_ImpactedCustomers;
+		});
+	});
+	
+
+	setTimeout(function () {
+		var counter1 = document.getElementsByClassName("percent-value");
+		
+		
+		
+		
+		
+		counter1[0].innerHTML = addCommas(fire1);
+		counter1[1].innerHTML = addCommas(fire2);
+
+		counter1[2].innerHTML =  addCommas(out1);
+		counter1[3].innerHTML =  addCommas(out2); 
+	}, 2000);
+	
+	function addCommas(nStr)
+{
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
+	
+	
+	</script>
+</body>
+</html>
