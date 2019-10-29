@@ -96,6 +96,29 @@ scale=1.0">
 		padding-left: initial;
 	}
 	
+		/*Setting button fix*/
+        @media (max-width: 767px) {
+            .nav-full-width-icons .utility-header .header-organization-banner {
+                width: 200px;
+                float: left;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links {
+                text-align: right;
+                position: relative;
+                top: 3px;
+                z-index: 9;
+                display: inline;
+            }  .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+                border: 1px solid #fff !important;
+                color: #fff !important;
+            }
+        }
+
+button#settings-btn {
+    display: none;
+}
+	
 	
 </style>	
 	
@@ -122,6 +145,7 @@ scale=1.0">
 
         <div class="settings-links">
             <ul class="utility-links">
+                <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                 <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
             </ul>
         </div>
@@ -172,18 +196,17 @@ scale=1.0">
             <!-- Navigation Full Width with Icons -->
 <nav id="navigation" class="main-navigation megadropdown ">
     <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
-        <li class="nav-item active">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
-
+        <li class="nav-item ">
+            <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
         </li>
 
         <li class="nav-item">
             <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
         </li>
 
-        <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-        </li>
+		<li class="nav-item">
+			<a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+		</li>
 
         <li class="nav-item">
             <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
@@ -256,44 +279,68 @@ scale=1.0">
 		</h4>
 		
 		<!--ICON BLOCKS-->
-<div class="group p-t-80">
-    <div class="third m-b-60">
-        <!-- Icon Blocks -->
-        <div class="shadow2 section-default text-center p-x-md p-b-lg">
-            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                <i class="ca-gov-icon-fire"></i>
-            </span>
-            <h3 class="h3 m-b-lg">CalFIRE Incident Map</h3>
-            <p class="m-b"></p>
-            <a class="btn btn-primary text-uppercase font-size-sm" href="https://www.fire.ca.gov/incidents/" target="_blank">Visit Fire Incident Map</a>
-        </div>
-        <!-- End Icon Blocks -->
-    </div>
-    <div class="third m-b-60">
-        <!-- Icon Blocks -->
-        <div class="shadow2 section-default  text-center p-x-md p-b-lg">
-            <span class="icon-block bg-blue-gradient rounded-50x" style="font-size:50px; ">
-                <i class="ca-gov-icon-cloud-services"></i>
-            </span>
-            <h3 class="h3 m-b-lg">Air Quality Index Information</h3>
-            <p class="m-b"></p>
-            <a class="btn btn-primary text-uppercase font-size-sm" href="https://ww2.arb.ca.gov/smoke-current-wildfires" target="_blank">Check your air quality</a>
-        </div>
-        <!-- End Icon Blocks -->
-    </div>
-    <div class="third m-b-60">
-        <!-- Icon Blocks -->
-        <div class="shadow2 section-default  text-center p-x-md p-b-lg">
-            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                <i class="ca-gov-icon-roadways"></i>
-            </span>
-            <h3 class="h3 m-b-lg">Road Closures</h3>
-            <p class="m-b"></p>
-            <a class="btn btn-primary text-uppercase font-size-sm" href="http://quickmap.dot.ca.gov/" target="_blank">Check Road Conditions</a>
-        </div>
-        <!-- End Icon Blocks -->
-    </div>
-</div><!-- End Group-->
+        <div class="group p-t-80">
+
+            <div class="quarter m-b-lg">
+                <!-- Wildfire Incidents -->
+                <a href="https://www.fire.ca.gov/incidents/" target="_blank" class="no-underline d-block bg-grey-lightest-hover p-b-md p-x-md" title="CAL FIRE Incident Map page">
+                    <div class="text-center">
+                        <div class="block-icon">
+                            <span class="ca-gov-icon-fire" style="font-size: 6rem;" aria-hidden="true"></span>
+                        </div>
+                        <h3 class="h3 m-b-sm color-gray-dark">CAL FIRE Incident Map</h3>
+
+                    </div>
+                </a>
+                <!-- End Icon Blocks -->
+            </div>
+
+
+
+            <div class="quarter m-b-lg">
+                <!-- Air Quality -->
+                <a href="https://www.airnow.gov/index.cfm?action=topics.smoke_wildfires" target="_blank" class="no-underline d-block bg-grey-lightest-hover p-b-md p-x-md" title="Air Quality Index Information">
+                    <div class="text-center">
+                        <div class="block-icon">
+                            <span class="ca-gov-icon-cloud-services" style="font-size: 6rem;" aria-hidden="true"></span>
+                        </div>
+                        <h3 class="h3 m-b-sm color-gray-dark">Air Quality Index Information</h3>
+
+                    </div>
+                </a>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="quarter m-b-lg">
+                <!-- Road Conditions -->
+                <a href="http://quickmap.dot.ca.gov/" target="_blank" class="no-underline d-block bg-grey-lightest-hover p-b-md p-x-md" title="Check Road Conditions">
+                    <div class="text-center">
+                        <div class="block-icon">
+                            <span class="ca-gov-icon-roadways" style="font-size: 6rem;" aria-hidden="true"></span>
+                        </div>
+                        <h3 class="h3 m-b-sm color-gray-dark">Check Road Conditions</h3>
+
+                    </div>
+                </a>
+                <!-- End Icon Blocks -->
+            </div>
+
+			                 <div class="quarter m-b-lg">
+                                <!-- Incident Overviews-->
+                                <a href="incidents.html" class="no-underline d-block bg-grey-lightest-hover p-b-md p-x-md" title="Incident Overviews">
+                                    <div class="text-center">
+                                        <div class="block-icon">
+                                            <span class="ca-gov-icon-warning-triangle" style="font-size: 6rem;" aria-hidden="true"></span>
+                                        </div>
+                                        <h3 class="h3 m-b-sm color-gray-dark">Incident Overviews</h3>
+
+                                       
+                                    </div>
+                                </a>
+                                <!-- End Icon Blocks -->
+                            </div>
+
+        </div><!-- End Group-->
 		
 		
 		
@@ -313,8 +360,9 @@ scale=1.0">
 		  <h3><strong>Evacuation Notices</strong></h3>
 			  <ul>
 			    <li><a href="https://socoemergency.org/" target="_blank" rel="noopener">Sonoma County Evacuation Orders – Kincade Fire</a></li>
-			    <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page#crc" >Warnings &amp; Updates			    </a></li>
+			    <li><a href="https://www.lafd.org/news/getty-fire?fbclid=IwAR3vOkXW3WpvEozdTjpvzk9klztkhLtNuaRZbEQtukIpFLvtfYD6-yy5I40" target="_blank">LA County Evacuation Orders</a></li>
 		      </ul>
+
 				
 	    </div>
 		
@@ -322,6 +370,27 @@ scale=1.0">
 		
 		</div>
 	</div>
+
+
+        <div class="container p-y-lg">
+            <h3 class="text-center h2">Sign up for alerts</h3>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Sign up to receive CAL FIRE news releases and incident information specific to your county</p>
+                    <a class="btn btn-primary" href="https://www.fire.ca.gov/programs/communications/news-release-subscription/" target="_blank">Sign Up</a>
+					<br /><br />
+                </div>
+                <div class="col-md-6">
+                    <p>To sign-up to receive alerts for your specific local agencies regarding emergency information text your zip code to <a href="sms://+888777"><strong>888777</strong></a>&nbsp;to opt-in</p>
+                    <a class="btn btn-primary" href="https://www.nixle.com/" target="_blank">Opt-In</a>
+					<br /><br />
+                </div>
+            </div>
+
+
+
+        </div>
 		
 
 
@@ -330,7 +399,7 @@ scale=1.0">
 	<span class="return-top hidden-print"></span></main>
 </div> <!-- #main-content -->
 
-
+</div>
 
 <!-- Global Footer -->
 <footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
@@ -338,5 +407,19 @@ scale=1.0">
                                         <div class="copyright">
                                         <div class="container" > Copyright &copy;
                                         <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>				<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
+
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+
+<script type="text/javascript"> function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); } </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

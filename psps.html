@@ -96,11 +96,34 @@ scale=1.0">
 		padding-left: initial;
 	}
 	
+	/*Setting button fix*/
+        @media (max-width: 767px) {
+            .nav-full-width-icons .utility-header .header-organization-banner {
+                width: 200px;
+                float: left;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links {
+                text-align: right;
+                position: relative;
+                top: 3px;
+                z-index: 9;
+                display: inline;
+            }  .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+                border: 1px solid #fff !important;
+                color: #fff !important;
+            }
+        }
+
+button#settings-btn {
+    display: none;
+}
+	
 	
 </style>	
 	
 	<script type="text/javascript">
-  var defaultActiveLink = "Power Shutoffs";
+  var defaultActiveLink = "PSPS";
 </script>
 
 </head>
@@ -122,6 +145,7 @@ scale=1.0">
 
         <div class="settings-links">
             <ul class="utility-links">
+                <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                 <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
             </ul>
         </div>
@@ -173,8 +197,7 @@ scale=1.0">
 <nav id="navigation" class="main-navigation megadropdown auto-highlight">
     <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
         <li class="nav-item ">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
-
+            <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
         </li>
 
         <li class="nav-item">
@@ -182,7 +205,7 @@ scale=1.0">
         </li>
 
         <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+            <a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
         </li>
 
         <li class="nav-item">
@@ -240,87 +263,89 @@ scale=1.0">
 
 
 <div id="page-container">
-<div id="main-content" class="main-content">
-<main class="main-primary">
-	
-	<div class="section section-default" style="background: #e6e6e6; ">
-    <div class="container">
-        <!-- columns and or content here -->
-		<h1 class="text-center" style="color:#545351;">Public Safety Power Shutoff (PSPS)</h1>
-		<h4 class="text-center">
-		For more information on public safety power shutdown outages in your area, please visit the sites below. <br><span class="label label-primary">NOTE:</span> The State of California does not run these websites is not responsible for the information on these pages.  
-		</h4>
-    </div>
-		
-		
-			</div> <!-- .et_pb_column -->
-	
-		
-		<div class="section section-default" >
-    <div class="container">
-		
+    <div id="main-content" class="main-content">
+        <main class="main-primary">
 
-		
-			<div class="offset-md-2 col-md-8">
-
-						  <h3><strong>Pacific Gas and Electric (PG&amp;E)</strong></h3>
-			  <ul>
-			    <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page?WT.mc_id=Vanity_pspsupdates" target="_blank" rel="noopener">		        Public Safety Power Shutoff  Information for PG&amp;E Customers			    </a></li>
-			    <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page#crc" >PG&amp;E Community  Resource Centers</a></li>
-		      </ul>
-				
-	    </div>
-		
-		
-		
-		</div>
-	</div>
-		<div class="section" >
-   
-			  <div class="container">
-		
-	
-		
-                  <div class="offset-md-2 col-md-8">
-
-                      <h3><strong>Southern California Edison (SCE)</strong> </h3>
-                      <ul>
-                          <li><a href="https://www.sce.com/outage-center/check-outage-status" target="_blank" rel="noopener">Public  Safety Power Shutoff Information for SCE Customers</a></li>
-                      </ul>
-
-                  </div>
-		
-		</div>
-		
-
-	
-	</div>	
-	
-	<div class="section section-default" >
-   
-			  <div class="container">
-	
-		
-                  <div class="offset-md-2 col-md-8">
-
-                      <h3><strong>San Diego Gas &amp; Electric (SDGE)</h3></strong>
-                      <ul>
-                          <li><a href="https://www.sdge.com/wildfire-safety/public-safety-power-shutoffs" target="_blank" rel="noopener">Public  Safety Power Shutoff Information for SDGE Customers</a></li>
-                      </ul>
-
-                  </div>
-		
-		</div>
-		
-
-	
-	</div>	
+            <div class="section section-default" style="background: #e6e6e6; ">
+                <div class="container">
+                    <!-- columns and or content here -->
+                    <h1 class="text-center" style="color:#545351;">Public Safety Power Shutoff (PSPS)</h1>
+                    <h4 class="text-center">
+                        For more information on public safety power shutdown outages in your area, please visit the sites below. <br>
+                        <span class="label label-primary">NOTE:</span> The State of California does not run these websites and is not responsible for the information on these pages.
+                    </h4>
+                </div>
 
 
-		
-		
-	<span class="return-top hidden-print"></span></main>
-</div> <!-- #main-content -->
+            </div> <!-- .et_pb_column -->
+
+
+            <div class="section section-default">
+                <div class="container">
+
+
+
+                    <div class="offset-md-2 col-md-8">
+
+                        <h3><strong>Pacific Gas and Electric (PG&amp;E)</strong></h3>
+                        <ul>
+                            <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page?WT.mc_id=Vanity_pspsupdates" target="_blank" rel="noopener">		        Public Safety Power Shutoff  Information for PG&amp;E Customers			    </a></li>
+                            <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page#crc">PG&amp;E Community  Resource Centers</a></li>
+                        </ul>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="section">
+
+                <div class="container">
+
+
+
+                    <div class="offset-md-2 col-md-8">
+
+                        <h3><strong>Southern California Edison (SCE)</strong> </h3>
+                        <ul>
+                            <li><a href="https://www.sce.com/psps" target="_blank" rel="noopener">Public  Safety Power Shutoff Information for SCE Customers</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="section section-default">
+
+                <div class="container">
+
+
+                    <div class="offset-md-2 col-md-8">
+
+                        <h3><strong>San Diego Gas &amp; Electric (SDGE)</h3></strong>
+                        <ul>
+                            <li><a href="https://www.sdge.com/wildfire-safety/public-safety-power-shutoffs" target="_blank" rel="noopener">Public  Safety Power Shutoff Information for SDGE Customers</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <span class="return-top hidden-print"></span>
+        </main>
+    </div> <!-- #main-content -->
 
 
     <div class="section-primary">
@@ -330,13 +355,29 @@ scale=1.0">
             </div>
         </div>
     </div>
-<!-- Global Footer -->
-<footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
-                                                    <!-- Copyright Statement -->
-                                        <div class="copyright">
-                                        <div class="container" > Copyright &copy;
-                                        <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
-										<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
+    <!-- Global Footer -->
+    <footer id="footer" class="global-footer hidden-print">
+        <div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links"><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
+        <!-- Copyright Statement -->
+        <div class="copyright">
+            <div class="container">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> State of California
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

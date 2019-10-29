@@ -105,7 +105,33 @@ scale=1.0">
     .brd-gray {
         border-color:gray;
     }
-	
+
+
+
+    /*Setting button fix*/
+    @media (max-width: 767px) {
+        .nav-full-width-icons .utility-header .header-organization-banner {
+            width: 200px;
+            float: left;
+        }
+
+        .nav-full-width-icons .settings-links .utility-links {
+            text-align: right;
+            position: relative;
+            top: 3px;
+            z-index: 9;
+            display: inline;
+        }
+
+        .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+        }
+    }
+
+    button#settings-btn {
+        display: none;
+    }
 	
 </style>	
 	
@@ -118,281 +144,282 @@ scale=1.0">
 
 
 
-<header role="banner" id="header" class="global-header fixed nav-full-width-icons">
+    <header role="banner" id="header" class="global-header fixed nav-full-width-icons">
         <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
 
-        
+
         <!-- Include Branding -->
-         <!-- Utility header branding (goes with full width navigation with icons) -->
-<div class="utility-header">
-    <div class="container">
-<!--        <div class="header-cagov-logo"><a href="/"><img src="/images/Ca-Gov-Logo-Gold.svg" alt="CA.gov"></a></div> -->
-        <div class="header-organization-banner"><a href="/"><img src="ca.gov-portal-logo-bear.png" alt="Organization Title"></a></div>
+        <!-- Utility header branding (goes with full width navigation with icons) -->
+        <div class="utility-header">
+            <div class="container">
+                <!--        <div class="header-cagov-logo"><a href="/"><img src="/images/Ca-Gov-Logo-Gold.svg" alt="CA.gov"></a></div> -->
+                <div class="header-organization-banner"><a href="/"><img src="ca.gov-portal-logo-bear.png" alt="Organization Title"></a></div>
 
 
-        <div class="settings-links">
-            <ul class="utility-links">
-                <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
-            </ul>
+                <div class="settings-links">
+                    <ul class="utility-links">
+                        <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
+                        <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<!-- Settings Bar -->
+        <!-- Settings Bar -->
         <div class="site-settings section section-standout collapsed collapse" id="siteSettings" style="">
-    <div class="container p-y">
+            <div class="container p-y">
 
 
-        <div class="btn-group btn-group-justified-sm" aria-label="contrastMode">
-            <div class="btn-group"><button type="button" class="btn btn-standout disableHighContrastMode">Default</button></div>
-            <div class="btn-group"><button type="button" class="btn btn-standout enableHighContrastMode">High Contrast</button></div>
+                <div class="btn-group btn-group-justified-sm" aria-label="contrastMode">
+                    <div class="btn-group"><button type="button" class="btn btn-standout disableHighContrastMode">Default</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout enableHighContrastMode">High Contrast</button></div>
+                </div>
+
+                <div class="btn-group" aria-label="textSizeMode">
+                    <div class="btn-group"><button type="button" class="btn btn-standout resetTextSize">Reset</button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <span class="sr-only">Increase</span><span class="ca-gov-icon-plus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+                    <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <span class="sr-only">Decrease</span><span class="ca-gov-icon-minus-line font-size-sm" aria-hidden="true"></span></span></button></div>
+                </div>
+                <button type="button" class="close collapsed" data-toggle="collapse" data-target="#siteSettings" aria-label="Close" aria-expanded="false" id="ui-collapse-391"><span aria-hidden="true">×</span></button>
+            </div>
         </div>
-
-        <div class="btn-group" aria-label="textSizeMode">
-            <div class="btn-group"><button type="button" class="btn btn-standout resetTextSize">Reset</button></div>
-            <div class="btn-group"><button type="button" class="btn btn-standout increaseTextSize"><span class="hidden-xs">Increase Font Size</span><span class="visible-xs">Font <span class="sr-only">Increase</span><span class="ca-gov-icon-plus-line font-size-sm" aria-hidden="true"></span></span></button></div>
-            <div class="btn-group"><button type="button" class="btn btn-standout decreaseTextSize"><span class="hidden-xs">Decrease Font Size</span><span class="visible-xs">Font <span class="sr-only">Decrease</span><span class="ca-gov-icon-minus-line font-size-sm" aria-hidden="true"></span></span></button></div>
-        </div>
-        <button type="button" class="close collapsed" data-toggle="collapse" data-target="#siteSettings" aria-label="Close" aria-expanded="false" id="ui-collapse-391"><span aria-hidden="true">×</span></button>
-    </div>
-</div>
 
         <!-- Include Mobile Controls -->
         <!-- mobile navigation controls -->
-<div class="mobile-controls">
-    <span class="mobile-control-group mobile-header-icons">
-    	<!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
-    </span>
-    <div class="mobile-control-group main-nav-icons float-right">
-        <!--<button class="mobile-control toggle-search float-left m-l-md">
-            <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
-        </button>-->
-        <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="nav_list" data-toggle="collapse" data-target="#navigation" role="tab" aria-selected="false">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="sr-only">Menu</span>
-        </button>
+        <div class="mobile-controls">
+            <span class="mobile-control-group mobile-header-icons">
+                <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+            </span>
+            <div class="mobile-control-group main-nav-icons float-right">
+                <!--<button class="mobile-control toggle-search float-left m-l-md">
+                    <span class="ca-gov-icon-search hidden-print" aria-hidden="true"></span><span class="sr-only">Search</span>
+                </button>-->
+                <button id="nav-icon3" class="mobile-control toggle-menu" aria-expanded="false" aria-controls="nav_list" data-toggle="collapse" data-target="#navigation" role="tab" aria-selected="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="sr-only">Menu</span>
+                </button>
 
-    </div>
-</div>
+            </div>
+        </div>
 
         <div class="navigation-search">
             <!-- Include Navigation -->
             <!-- Navigation Full Width with Icons -->
-<nav id="navigation" class="main-navigation megadropdown ">
-    <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
-        <li class="nav-item ">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+            <nav id="navigation" class="main-navigation megadropdown ">
+                <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
+                    <li class="nav-item ">
+                        <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+                    </li>
 
-        </li>
+                    <li class="nav-item">
+                        <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
-        </li>
+                    <li class="nav-item">
+                        <a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
-        </li>
-
-        <li class="nav-item">
-            <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
-        </li>
-        <li class="nav-item">
-            <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
-        </li>
-        <!--<li class="nav-item" id="nav-item-search">
-        <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
-    </li>-->
-    </ul>
-</nav>
+                    <li class="nav-item">
+                        <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
+                    </li>
+                    <!--<li class="nav-item" id="nav-item-search">
+                        <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
+                    </li>-->
+                </ul>
+            </nav>
 
 
             <div id="head-search" class="search-container in" aria-hidden="true" style="top: 86px;">
                 <!-- Include Search -->
                 <!-- Google Custom Search - /ssi/search.html-->
-<!--Uncomment if you prefer to use original google search box.
-    (be advided that original custom search box is not meeting WCAG accessibility standards)-->
-<!--<script type="text/javascript">
-    var cx = '001779225245372747843:9s-idxui5pk';// Step 7: Update this value with your search engine unique ID. Submit a request to the CDT Service Desk if you don't already know your unique search engine ID.
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script');
-    s[s.length - 1].parentNode.insertBefore(gcse, s[s.length - 1]);
-</script>
-<gcse:searchbox-only resultsUrl="/serp.html" enableAutoComplete="true"></gcse:searchbox-only>-->
-<!--Custom Google Search ID Script can be found inside of serp.html file -->
-<!--<div class="container">
-    <form id="Search" class="pos-rel" action="/serp.html">
-        <span class="sr-only" id="SearchInput" aria-hidden="true">Custom Google Search</span>
-        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Search this website" class="height-50 border-0 p-x-sm w-100 search-textfield" tabindex="-1" aria-hidden="true">
-        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent" tabindex="-1" aria-hidden="true"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
-        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset" tabindex="-1" aria-hidden="true"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
-    </form>
-</div>-->
+                <!--Uncomment if you prefer to use original google search box.
+                    (be advided that original custom search box is not meeting WCAG accessibility standards)-->
+                <!--<script type="text/javascript">
+                    var cx = '001779225245372747843:9s-idxui5pk';// Step 7: Update this value with your search engine unique ID. Submit a request to the CDT Service Desk if you don't already know your unique search engine ID.
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script');
+                    s[s.length - 1].parentNode.insertBefore(gcse, s[s.length - 1]);
+                </script>
+                <gcse:searchbox-only resultsUrl="/serp.html" enableAutoComplete="true"></gcse:searchbox-only>-->
+                <!--Custom Google Search ID Script can be found inside of serp.html file -->
+                <!--<div class="container">
+                    <form id="Search" class="pos-rel" action="/serp.html">
+                        <span class="sr-only" id="SearchInput" aria-hidden="true">Custom Google Search</span>
+                        <input type="text" id="q" name="q" aria-labelledby="SearchInput" placeholder="Search this website" class="height-50 border-0 p-x-sm w-100 search-textfield" tabindex="-1" aria-hidden="true">
+                        <button type="submit" class="pos-abs gsc-search-button top-0 width-50 height-50 border-0 bg-transparent" tabindex="-1" aria-hidden="true"><span class="ca-gov-icon-search font-size-30 color-gray" aria-hidden="true"></span><span class="sr-only">Submit</span></button>
+                        <div class="width-50 height-50 close-search-btn"><button class="close-search gsc-clear-button width-50 height-50 border-0 bg-transparent pos-rel" type="reset" tabindex="-1" aria-hidden="true"><span class="sr-only">Close Search</span><span class="ca-gov-icon-close-mark" aria-hidden="true"></span></button></div>
+                    </form>
+                </div>-->
             </div>
 
         </div>
 
         <div class="header-decoration"></div>
     </header>
-	
 
 
 
-<div id="main-content" class="main-content">
-    <main class="main-primary">
 
-        <div class="section-default p-y-md"><div class="container"><h1 class="m-y-0">Incident Overviews</h1></div></div>
+    <div id="main-content" class="main-content">
+        <main class="main-primary">
+
+            <div class="section-default p-y-md text-align-center"><div class="container"><h1 class="m-y-0 text-center">Incident Overviews</h1></div></div>
 
 
-        <div class="container">
-            <!--ICON BLOCKS-->
-            <div class="group p-t-80">
-                <div class="third m-b-60">
-                    <!-- Icon Blocks -->
-                    <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                            <i class="ca-gov-icon-fire"></i>
-                        </span>
-                        <h3 class="h3 m-t-0">Wildfires </h3>
-                        <p class="m-b">For more information on current wildfires burning in California visit the CAL FIRE interactive incident webpage</p>
-                        <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.fire.ca.gov/incidents/" target="_blank">Visit Fire Incident Map</a>
+            <div class="container">
+                <!--ICON BLOCKS-->
+                <div class="group p-t-80">
+                    <div class="third m-b-60">
+                        <!-- Icon Blocks -->
+                        <div class="shadow2 section-default text-center p-x-md p-b-lg">
+                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                                <i class="ca-gov-icon-fire"></i>
+                            </span>
+                            <h3 class="h3 m-t-0">Wildfires </h3>
+                            <p class="m-b">For more information on current wildfires burning in California visit the CAL FIRE interactive incident webpage</p>
+                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.fire.ca.gov/incidents/" target="_blank">Visit Fire Incident Map</a>
+                        </div>
+                        <!-- End Icon Blocks -->
                     </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <div class="third m-b-60">
-                    <!-- Icon Blocks -->
-                    <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                            <i class="ca-gov-icon-info-bubble"></i>
-                        </span>
-                        <h3 class="h3 m-t-0">Sign-up to Emergency Alerts </h3>
-                        <p class="m-b">To sign-up to receive alerts for your specific local agencies regarding emergency information text your zip code to <strong>888777</strong> to opt-in</p>
-                        <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.nixle.com/" target="_blank">Sign up</a>
+                    <div class="third m-b-60">
+                        <!-- Icon Blocks -->
+                        <div class="shadow2 section-default text-center p-x-md p-b-lg">
+                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                                <i class="ca-gov-icon-info-bubble"></i>
+                            </span>
+                            <h3 class="h3 m-t-0">Sign-up to Emergency Alerts </h3>
+                            <p class="m-b">To sign-up to receive alerts for your specific local agencies regarding emergency information text your zip code to <strong>888777</strong> to opt-in</p>
+                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://www.nixle.com/" target="_blank">Sign up <span class="sr-only">to Emergency Alerts</span></a>
+                        </div>
+                        <!-- End Icon Blocks -->
                     </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <div class="third m-b-60">
-                    <!-- Icon Blocks -->
-                    <div class="shadow2 section-default text-center p-x-md p-b-lg">
-                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                            <i class="ca-gov-icon-online-services"></i>
-                        </span>
-                        <h3 class="h3 m-t-0">Sign-up to CAL FIRE News </h3>
-                        <p class="m-b">Sign up to receive CAL FIRE news releases and incident information specific to your county</p>
-                        <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.fire.ca.gov/programs/communications/news-release-subscription/" target="_blank">Sign up</a>
+                    <div class="third m-b-60">
+                        <!-- Icon Blocks -->
+                        <div class="shadow2 section-default text-center p-x-md p-b-lg">
+                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                                <i class="ca-gov-icon-online-services"></i>
+                            </span>
+                            <h3 class="h3 m-t-0">Sign-up to CAL FIRE News </h3>
+                            <p class="m-b">Sign up to receive CAL FIRE news releases and incident information specific to your county</p>
+                            <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.fire.ca.gov/programs/communications/news-release-subscription/" target="_blank">Sign up <span class="sr-only">to CAL FIRE News</span></a>
+                        </div>
+                        <!-- End Icon Blocks -->
                     </div>
-                    <!-- End Icon Blocks -->
-                </div>
-            </div><!-- End Group-->
-            <div class="group">
-                <div class="third m-b-60">
-                    <!-- Icon Blocks -->
-                    <div class="shadow2 section-default  text-center p-x-md p-b-lg">
-                        <span class="icon-block bg-blue-gradient rounded-50x" style="font-size:50px; ">
-                            <i class="ca-gov-icon-cloud-services"></i>
-                        </span>
-                        <h3 class="h3 m-b-lg">Air quality index information</h3>
-                        <p class="m-b"></p>
-                        <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.airnow.gov/index.cfm?action=topics.smoke_wildfires" target="_blank">Check your air quality</a>
+                </div><!-- End Group-->
+                <div class="group">
+                    <div class="third m-b-60">
+                        <!-- Icon Blocks -->
+                        <div class="shadow2 section-default  text-center p-x-md p-b-lg">
+                            <span class="icon-block bg-blue-gradient rounded-50x" style="font-size:50px; ">
+                                <i class="ca-gov-icon-cloud-services"></i>
+                            </span>
+                            <h3 class="h3 m-b-lg">Air quality index information</h3>
+                            <p class="m-b"></p>
+                            <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="https://www.airnow.gov/index.cfm?action=topics.smoke_wildfires" target="_blank">Check your air quality</a>
+                        </div>
+                        <!-- End Icon Blocks -->
                     </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <div class="third m-b-60">
-                    <!-- Icon Blocks -->
-                    <div class="shadow2 section-default  text-center p-x-md p-b-lg">
-                        <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
-                            <i class="ca-gov-icon-roadways"></i>
-                        </span>
-                        <h3 class="h3 m-b-lg">Road closures</h3>
-                        <p class="m-b"></p>
-                        <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="http://quickmap.dot.ca.gov/" target="_blank">Check Road Conditions</a>
+                    <div class="third m-b-60">
+                        <!-- Icon Blocks -->
+                        <div class="shadow2 section-default  text-center p-x-md p-b-lg">
+                            <span class="icon-block bg-blue-gradient rounded-50x " style="font-size:50px; ">
+                                <i class="ca-gov-icon-roadways"></i>
+                            </span>
+                            <h3 class="h3 m-b-lg">Road closures</h3>
+                            <p class="m-b"></p>
+                            <a class="btn btn-lg btn-primary text-uppercase font-size-sm" href="http://quickmap.dot.ca.gov/" target="_blank">Check Road Conditions</a>
+                        </div>
+                        <!-- End Icon Blocks -->
                     </div>
-                    <!-- End Icon Blocks -->
                 </div>
-            </div>
 
-        </div>
-
-
-        <div class="section-primary">
-            <div class="container p-y-lg text-center">
-                <div class="offset-md-2 col-md-8">
-                <h2>Resources Preposition</h2>
-                <p>With elevated fire conditions in the forecast for parts of California, Cal OES Fire and Rescue staff have coordinated with counties to preposition fire apparatus and personnel to augment local resources in preparation for the upcoming significant weather events.</p>
-                <a class="btn btn-lg btn-outline-light m-t-md" href="http://www.oesnews.com/updated-cal-oes-fire-and-rescue-pre-position-resources-in-anticipation-of-critical-fire-weather/" target="_blank">Learn More <span class="sr-only">about Resources Preposition:</span></a>
-                </div>
             </div>
 
 
-        </div>
+            <div class="section-primary">
+                <div class="container p-y-lg text-center">
+                    <div class="offset-md-2 col-md-8">
+                        <h2>Resources Preposition</h2>
+                        <p>With elevated fire conditions in the forecast for parts of California, Cal OES Fire and Rescue staff have coordinated with counties to preposition fire apparatus and personnel to augment local resources in preparation for the upcoming significant weather events.</p>
+                        <a class="btn btn-lg btn-outline-light m-t-md" href="http://www.oesnews.com/updated-cal-oes-fire-and-rescue-pre-position-resources-in-anticipation-of-critical-fire-weather/" target="_blank">Learn More <span class="sr-only">about Resources Preposition:</span></a>
+                    </div>
+                </div>
 
 
-        <div class="container p-y-lg">
-            
+            </div>
+
+
+            <div class="container p-y-lg">
+
                 <h2>State of Emergency Declarations and Federal Aid</h2>
 
-                <p>
-                    Governor Gavin Newsom has declared a statewide emergency due to the effects of unprecedented high-wind events which have resulted in fires and evacuations across the state.
-                </p>
+              <p>
+                <a href="https://www.gov.ca.gov/2019/10/27/governor-newsom-declares-statewide-emergency-due-to-fires-extreme-weather-conditions/" target="_blank">Governor Gavin Newsom has declared a statewide emergency</a> due to the effects of unprecedented high-wind events, which have resulted in fires and evacuations across the state. </p>
 
                 <p>
-                    The Kincade Fire in Sonoma County has burned more than 30,000 acres to date, and has led to the evacuation of almost 200,000 people and threatened hundreds of structures. The Tick Fire in Southern California has also destroyed structures, threatened homes and critical infrastructure, and caused the evacuation of tens of thousands of residents. As of today, there are over 3,000 local, state and federal personnel, including first responders, assisting with the Kincade Fire alone
-                </p>
+                The Governor has also secured Fire Management Assistance Grants to help ensure the availability of resources to fight the<a href="https://www.gov.ca.gov/2019/10/28/california-secures-federal-assistance-to-support-getty-fire-response/" target="_blank"> Getty</a>, <a href="https://www.gov.ca.gov/2019/10/24/california-secures-federal-assistance-to-support-kincade-fire-response/" target="_blank">Kincade</a> and <a href="https://www.gov.ca.gov/2019/10/24/california-secures-federal-assistance-to-support-tick-fire-response/" target="_blank">Tick</a> fires and enable local, state and tribal agencies to recover eligible costs.</p>
                 <p>
-                    The Governor has also secured Fire Management Assistance Grants to help ensure the availability of resources to fight the Kincade and Tick fires and enable local, state and tribal agencies to recover eligible costs.
-                </p>
+              <a href="https://www.gov.ca.gov/newsroom/" target="_blank">View latest information on Governor Newsom’s actions </a></p>
+            </div>
 
-                <p>For more information on public safety power shutdown outages in your area, please visit the sites below. NOTE: The State of California does not run these websites is not responsible for the information on these pages.  </p>
+            <div class="section-impact">
+                <div class="container p-y-lg text-center">
+                    <div class="offset-md-2 col-md-8">
+                        <h2>CPUC PSPS Actions</h2>
+                        <p class="lead">The California Public Utilities Commission (CPUC) regulates the State's investor-owned electric utilities, notably Pacific Gas and Electric Company (PG&E), Southern California Edison, and San Diego Gas & Electric (SDG&E). They may shut off electric power, referred to as "de-energization" or Public Safety Power Shut-offs (PSPS). Learn more about the current regulations, read the latest PSPS after-action filings and view regulatory oversight actions taken by the CPUC:</p>
+                        <a class="btn btn-lg btn-outline-light m-t-md" href="http://www.oesnews.com/updated-cal-oes-fire-and-rescue-pre-position-resources-in-anticipation-of-critical-fire-weather/" target="_blank">View the Latest CPUC PSPS Actions</a>
 
-                <ul class="list-primary lead">
-                    <li><a href="https://www.pge.com/en_US/safety/emergency-preparedness/natural-disaster/wildfires/public-safety-event.page?WT.mc_id=Vanity_pspsupdates" target="_blank">PGE</a></li>
-                    <li><a href="https://www.sce.com/safety/wildfire/psps" target="_blank">SCE</a></li>
-                    <li><a href="https://www.sdge.com/wildfire-safety/public-safety-power-shutoffs" target="_blank">SDGE</a></li>
-                </ul>
-         
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <span class="return-top hidden-print"></span>
+        </main>
+    </div> <!-- #main-content -->
+    <!-- Global Footer -->
+    <footer id="footer" class="global-footer hidden-print">
+        <div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links"><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
+        <!-- Copyright Statement -->
+        <div class="copyright">
+            <div class="container">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> State of California
+            </div>
         </div>
+    </footer>
+    <script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
 
-<div class="section-impact">
-    <div class="container p-y-lg text-center">
-        <div class="offset-md-2 col-md-8">
-            <h2>CPUC PSPS Actions</h2>
-            <p class="lead">The California Public Utilities Commission (CPUC) regulates the State's investor-owned electric utilities, notably Pacific Gas and Electric Company (PG&E), Southern California Edison, and San Diego Gas & Electric (SDG&E). They may shut off electric power, referred to as "de-energization" or Public Safety Power Shut-offs (PSPS). Learn more about the current regulations, read the latest PSPS after-action filings and view regulatory oversight actions taken by the CPUC:</p>
-            <a class="btn btn-lg btn-outline-light m-t-md" href="http://www.oesnews.com/updated-cal-oes-fire-and-rescue-pre-position-resources-in-anticipation-of-critical-fire-weather/" target="_blank">View the Latest CPUC PSPS Actions</a>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-        </div>
-    </div>
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-
-</div>
-
-
-
-        <span class="return-top hidden-print"></span>
-    </main>
-</div> <!-- #main-content -->
-
-
-
-<!-- Global Footer -->
-<footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
-                                                    <!-- Copyright Statement -->
-                                        <div class="copyright">
-                                        <div class="container" > Copyright &copy;
-                                        <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
-			<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
-
-
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

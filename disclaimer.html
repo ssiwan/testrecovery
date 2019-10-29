@@ -98,7 +98,29 @@ scale=1.0">
 
         .brd-gray {
             border-color: gray;
+        }/*Setting button fix*/
+        @media (max-width: 767px) {
+            .nav-full-width-icons .utility-header .header-organization-banner {
+                width: 200px;
+                float: left;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links {
+                text-align: right;
+                position: relative;
+                top: 3px;
+                z-index: 9;
+                display: inline;
+            }  .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+                border: 1px solid #fff !important;
+                color: #fff !important;
+            }
         }
+
+button#settings-btn {
+    display: none;
+} 
+
     </style>
 
 </head>
@@ -120,6 +142,7 @@ scale=1.0">
 
                 <div class="settings-links">
                     <ul class="utility-links">
+                        <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                         <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
                     </ul>
                 </div>
@@ -170,33 +193,32 @@ scale=1.0">
             <!-- Navigation Full Width with Icons -->
             <nav id="navigation" class="main-navigation megadropdown ">
                 <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
-					        <li class="nav-item ">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+                    <li class="nav-item ">
+                        <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+                    </li>
 
-        </li>
+                    <li class="nav-item">
+                        <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
-        </li>
+                    <li class="nav-item">
+                        <a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
-        </li>
-
-        <li class="nav-item">
-            <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
-        </li>
-        <li class="nav-item">
-            <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
+                    </li>
 
                     <!--<li class="nav-item" id="nav-item-search">
                         <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
@@ -243,25 +265,30 @@ scale=1.0">
         <main class="main-primary">
 
             <div class="section-default p-y-md"><div class="container"><h1 class="m-y-0">Disclaimer</h1></div></div>
-			<div class="section">
+            <div class="section">
                 <div class="container">
                     The State of California website contains hypertext links to external websites. The State or California is not responsible for the accessibility or accuracy of the information contained in these external websites, and the State of California does not endorse any entity or product for which a link may be provided. External links are provided as a convenience for the users of this site. Once you leave the State of California website via a link to an external site, the State of California privacy and security policies no longer apply.
                 </div>
 
-                
-              
 
-                    </div>
 
-                <span class="return-top hidden-print"></span>
-</main>
+
+            </div>
+
+            <span class="return-top hidden-print"></span>
+        </main>
     </div> <!-- #main-content -->
     <!-- Global Footer -->
-    <footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
-                                                    <!-- Copyright Statement -->
-                                        <div class="copyright">
-                                        <div class="container" > Copyright &copy;
-                                        <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
+    <footer id="footer" class="global-footer hidden-print">
+        <div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links"><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
+        <!-- Copyright Statement -->
+        <div class="copyright">
+            <div class="container">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> State of California
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js"></script>
 
     <script>
@@ -270,6 +297,17 @@ scale=1.0">
 
 
     </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

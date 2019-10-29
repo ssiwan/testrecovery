@@ -98,6 +98,31 @@ scale=1.0">
         .brd-gray {
             border-color: gray;
         }
+		
+		
+			/*Setting button fix*/
+        @media (max-width: 767px) {
+            .nav-full-width-icons .utility-header .header-organization-banner {
+                width: 200px;
+                float: left;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links {
+                text-align: right;
+                position: relative;
+                top: 3px;
+                z-index: 9;
+                display: inline;
+            }  .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+                border: 1px solid #fff !important;
+                color: #fff !important;
+            }
+        }
+
+button#settings-btn {
+    display: none;
+}
+		
     </style>
 
     <script type="text/javascript">
@@ -123,6 +148,7 @@ scale=1.0">
 
                 <div class="settings-links">
                     <ul class="utility-links">
+                        <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                         <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
                     </ul>
                 </div>
@@ -174,8 +200,7 @@ scale=1.0">
             <nav id="navigation" class="main-navigation megadropdown ">
                 <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
                     <li class="nav-item ">
-                        <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
-
+                        <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
                     </li>
 
                     <li class="nav-item">
@@ -183,7 +208,7 @@ scale=1.0">
                     </li>
 
                     <li class="nav-item">
-                        <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+                        <a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
                     </li>
 
                     <li class="nav-item">
@@ -270,7 +295,7 @@ scale=1.0">
                             </span>
                             <h3 class="h3 m-t-0">Wildfire Preparedness </h3>
                             <p class="m-b">Find more information on fire preparedness at readyforwildfire.org</p>
-                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="http://readyforwildfire.org" target="_blank">Visit readyforwildfire.org</a>
+                            <a class="btn btn-primary btn-lg text-uppercase font-size-sm" href="https://readyforwildfire.org" target="_blank">Visit readyforwildfire.org</a>
                         </div>
                         <!-- End Icon Blocks -->
                     </div>
@@ -291,21 +316,10 @@ scale=1.0">
                 </div>
             </div>
 
-            <div class="section-primary">
-                <div class="container p-y-lg text-center">
-                    <div class="offset-md-2 col-md-8">
-                        <h2>Ready, Set, GO</h2>
-                        <p class="lead">Ready, Set, GO provides step-by-step checklists and information on <a href="https://www.readyforwildfire.org/prepare-for-wildfire/get-set/" target="_blank">how to be set when a wildfire strikes</a> and what you and your <a href="https://www.readyforwildfire.org/prepare-for-wildfire/go-evacuation-guide/" target="_blank">family should do when told to GO!</a> It also provides information about what to do when allowed to <a href="https://www.readyforwildfire.org/post-wildfire/" target="_blank">return home after a wildfire</a>.  </p>
 
 
-                    </div>
-                </div>
 
-
-            </div>
-
-
-            <div class="container p-y-lg">
+            <div class="container p-b-lg">
 
                 <div class="container">
                     <!--ICON BLOCKS-->
@@ -356,7 +370,18 @@ scale=1.0">
 
             </div>
 
+            <div class="section-primary">
+                <div class="container p-y-lg text-center">
+                    <div class="offset-md-2 col-md-8">
+                        <h2>Ready, Set, GO</h2>
+                        <p class="lead">Ready, Set, GO provides step-by-step checklists and information on <a href="https://www.readyforwildfire.org/prepare-for-wildfire/get-set/" target="_blank">how to be set when a wildfire strikes</a> and what you and your <a href="https://www.readyforwildfire.org/prepare-for-wildfire/go-evacuation-guide/" target="_blank">family should do when told to GO!</a> It also provides information about what to do when allowed to <a href="https://www.readyforwildfire.org/post-wildfire/" target="_blank">return home after a wildfire</a>.  </p>
 
+
+                    </div>
+                </div>
+
+
+            </div>
 
 
             <span class="return-top hidden-print"></span>
@@ -364,7 +389,7 @@ scale=1.0">
         </main>
     </div> <!-- #main-content -->
 
-    <div class="section-primary">
+    <div class="section-impact">
         <div class="container p-y-md">
             <div class="col-sm-8">
                 <p><strong>DISCLAIMER:</strong> The State of California does not operate or maintain these  external websites and is not responsible for the accuracy or accessibility of the information contained therein.</p>
@@ -390,6 +415,17 @@ scale=1.0">
 
 
     </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

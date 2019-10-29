@@ -96,6 +96,35 @@ scale=1.0">
 		padding-left: initial;
 	}
 	
+		/*Setting button fix*/
+        @media (max-width: 767px) {
+            .nav-full-width-icons .utility-header .header-organization-banner {
+                width: 200px;
+                float: left;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links {
+                text-align: right;
+                position: relative;
+                top: 3px;
+                z-index: 9;
+                display: inline;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+                border: 1px solid #fff !important;
+                color: #fff !important;
+            }
+			
+
+			
+        }
+
+    button#settings-btn {
+        display: none;
+    }
+	
+	
 	
 </style>	
 	
@@ -122,6 +151,7 @@ scale=1.0">
 
         <div class="settings-links">
             <ul class="utility-links">
+                <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                 <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
             </ul>
         </div>
@@ -173,17 +203,17 @@ scale=1.0">
 <nav id="navigation" class="main-navigation megadropdown auto-highlight">
     <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
         <li class="nav-item ">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
-
+            <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
         </li>
 
         <li class="nav-item">
             <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
         </li>
 
-        <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-        </li>
+
+		<li class="nav-item">
+			<a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+		</li>
 
         <li class="nav-item active">
             <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
@@ -240,102 +270,120 @@ scale=1.0">
 
 
 <div id="page-container">
-<div id="main-content" class="main-content">
-<main class="main-primary">
-	
-	<div class="section section-default" style="background: #e6e6e6; ">
-    <div class="container">
-        <!-- columns and or content here -->
-		<h1 class="text-center" style="color:#545351;">Health Services</h1>
-		<h4 class="text-center">
-		Information on health services and resources </h4>
-    </div>
-		
-		
-			</div> <!-- .et_pb_column -->
-	
-		
-		<div class="section section-default" >
-    <div class="container">
-		
-		
-		
-		<div class="three-quarters">
+    <div id="main-content" class="main-content">
+        <main class="main-primary">
 
-						  <h3><strong>PSPS Hotline</strong>&nbsp;</h3>
-			  <p>
-			As utility-initiated Public Safety Power Shutoffs continue to impact residents across California, a nonemergency hotline has been established to help medically vulnerable Californians and health and community care facilities find resources in their communities during power shutoffs. The hotline will provide information about resources available during public safety power shutoffs. During power shutoffs or potential power shutoffs, hotline assistance will be available 9:00am-9:00pm. Assistance is available in many languages. 711 Telecommunications Relay Services (TRS) are available for individuals with hearing or speech related disabilities.
-				  
-				  <br><h4>CHHS PSPS Hotline </h4> <a class="h4" href="tel:1-833-284-3473">(833) 284-3473</a>
-			
-			
-			</p>
-		<p>&nbsp;</p>
-		<p>Individuals experiencing a medical or psychiatric  emergency should call 911. Individuals who need medical services or a  medication should call their health plan&rsquo;s member services number. Individuals  who have a problem getting services or assistance with their health care can  contact the Department of Managed Health Care&rsquo;s Help Center at <a  href="tel:123-456-7890">(888) 466-2219 </a> or <a href="http://www.HealthHelp.ca.gov">www.HealthHelp.ca.gov</a>.</p>
-		<p>&nbsp;</p>
-		<p><a class="btn btn-primary" href="https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs/" target="_blank">View more information on PSPS hotline</a></p>
-        </div>
-		
-		
-		
-		</div>
-	</div>
-	
-	<div class="section p-0">
-	
-	<!--Panes-->
-<div class="pane odd">
-    <div class="group-left">
-        <a class="pane-img" href="http://ca.gov/Agencies/Employment-Development-Department" aria-label="Employment Development Department" style="background: url(&quot;https://www.chhs.ca.gov/wp-content/uploads/2019/10/david-hellmann-0BDzmJBWYyc-unsplash-1024x682.jpg&quot;); height: 0px;"></a>
-    </div>
-    <div class="group-right section-primary">
-        <div class="pane-content">
-            <h2 class="m-b-sm">Public Safety Power Shutoffs Resource Guide</h2>
-            <p>CHHS continues to work to ensure that the most vulnerable communities are being served, including older Californians, individuals with disabilities, and those with access and functional needs. CHHS has provided various resources available for those in de-energization areas.</p>
+            <div class="section section-default" style="background: #e6e6e6; ">
+                <div class="container">
+                    <!-- columns and or content here -->
+                    <h1 class="text-center" style="color:#545351;">Health Services</h1>
+                    <h4 class="text-center">
+                        Information on health services and resources
+                    </h4>
+                </div>
 
-            <a href=" https://www.chhs.ca.gov/blog/2019/10/25/public-safety-power-shutoffs-resource-guide/" class="btn btn-default"><span class="ca-gov-icon-info"></span> View <span class="sr-only">PUBLIC SAFETY POWER SHUTOFFS RESOURCE GUIDE</span> Resource Guide </a>
-       
-        </div>
-    </div>
-</div>
-	
-	</div>
-	
-		<div class="section" >
-   
-			  <div class="container">
-		
-		
-		
-			<div class="three-quarters">
 
-						  <h3><strong>Smoke safety information</strong> </h3>
-				<p>
-				
-				People impacted by wildfire smoke should protect themselves – especially children, the elderly, pregnant women and people with heart or respiratory conditions. These sensitive groups are advised to limit outdoor activities, especially when the Air Quality Index (AQI) reaches ‘Unhealthy for Sensitive Groups.’ Air quality has been reaching ‘Unhealthy,’ ‘Very Unhealthy’ and even ‘Hazardous’ levels in some places over the past week. Even healthy people may experience symptoms in smoky conditions or after exposure. Pets also can be affected by unhealthy air and should be brought indoors, if possible. 
-				
-				</p>
-				
-				<p><a class="btn btn-primary" href="https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs/" target="_blank">View more information on smoke safety</a></p>
-				
-		    </div>
-		
-		</div>
-		
+            </div> <!-- .et_pb_column -->
 
-	
-	</div>
-	<span class="return-top hidden-print"></span></main>
+
+            <div class="section section-default">
+                <div class="container">
+
+
+
+                    <div class="three-quarters">
+
+                        <h3><strong>PSPS Hotline</strong>&nbsp;</h3>
+                        <p>
+                            As utility-initiated Public Safety Power Shutoffs continue to impact residents across California, a nonemergency hotline has been established to help medically vulnerable Californians and health and community care facilities find resources in their communities during power shutoffs. The hotline will provide information about resources available during public safety power shutoffs. During power shutoffs or potential power shutoffs, hotline assistance will be available 9:00am-9:00pm. Assistance is available in many languages. 711 Telecommunications Relay Services (TRS) are available for individuals with hearing or speech related disabilities.
+
+                            <br><h4>CHHS PSPS Hotline </h4> <a class="h4" href="tel:1-833-284-3473">(833) 284-3473</a>
+
+
+                        </p>
+                        <p>&nbsp;</p>
+                        <p>Individuals experiencing a medical or psychiatric  emergency should call 911. Individuals who need medical services or a  medication should call their health plan&rsquo;s member services number. Individuals  who have a problem getting services or assistance with their health care can  contact the Department of Managed Health Care&rsquo;s Help Center at <a href="tel:1-888-466-2219">(888) 466-2219 </a> or <a href="https://www.HealthHelp.ca.gov">www.HealthHelp.ca.gov</a>.</p>
+                        <p>&nbsp;</p>
+                        <p><a class="btn btn-primary" href="https://www.chhs.ca.gov/blog/2019/10/27/new-hotline-available-to-help-californias-most-vulnerable-during-power-shutoffs/" target="_blank">View more information on PSPS hotline</a></p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="section p-0">
+
+                <!--Panes-->
+                <div class="pane odd">
+                    <div class="group-left">
+                        <a class="pane-img" href="http://ca.gov/Agencies/Employment-Development-Department" aria-label="Employment Development Department" style="background: url(&quot;https://www.chhs.ca.gov/wp-content/uploads/2019/10/david-hellmann-0BDzmJBWYyc-unsplash-1024x682.jpg&quot;); height: 0px;"></a>
+                    </div>
+                    <div class="group-right section-primary">
+                        <div class="pane-content">
+                            <h2 class="m-b-sm">Public Safety Power Shutoffs Resource Guide</h2>
+                            <p>CHHS continues to work to ensure that the most vulnerable communities are being served, including older Californians, individuals with disabilities, and those with access and functional needs. CHHS has provided various resources available for those in de-energization areas.</p>
+
+                            <a href=" https://www.chhs.ca.gov/blog/2019/10/25/public-safety-power-shutoffs-resource-guide/" class="btn btn-default"><span class="ca-gov-icon-info"></span> View <span class="sr-only">PUBLIC SAFETY POWER SHUTOFFS RESOURCE GUIDE</span> Resource Guide </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <div class="container">
+
+
+
+                    <div class="three-quarters">
+
+                        <h3><strong>Smoke safety information</strong> </h3>
+                        <p>
+
+                            People impacted by wildfire smoke should protect themselves – especially children, the elderly, pregnant women and people with heart or respiratory conditions. These sensitive groups are advised to limit outdoor activities, especially when the Air Quality Index (AQI) reaches ‘Unhealthy for Sensitive Groups.’ Air quality has been reaching ‘Unhealthy,’ ‘Very Unhealthy’ and even ‘Hazardous’ levels in some places over the past week. Even healthy people may experience symptoms in smoky conditions or after exposure. Pets also can be affected by unhealthy air and should be brought indoors, if possible.
+
+                        </p>
+
+                        <p><a class="btn btn-primary" href="https://www.cdph.ca.gov/Programs/EPO/Pages/Wildfire%20Pages/Wildfires--.aspx" target="_blank">View more information on smoke safety</a></p>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <span class="return-top hidden-print"></span>
+        </main>
 </div> <!-- #main-content -->
+</div>
+    <!-- Global Footer -->
+    <footer id="footer" class="global-footer hidden-print">
+        <div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links"><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
+        <!-- Copyright Statement -->
+        <div class="copyright">
+            <div class="container">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> State of California
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
 
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<!-- Global Footer -->
-<footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
-                                                    <!-- Copyright Statement -->
-                                        <div class="copyright">
-                                        <div class="container" > Copyright &copy;
-                                        <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
-			<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js?ver=1.4.12"></script>
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

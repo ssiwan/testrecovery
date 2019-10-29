@@ -93,8 +93,31 @@
 	.nav-full-width-icons .utility-header .header-organization-banner {
 		padding-left: initial;
 	}
-	
-	
+
+    /*Setting button fix*/
+    @media (max-width: 767px) {
+        .nav-full-width-icons .utility-header .header-organization-banner {
+            width: 200px;
+            float: left;
+        }
+
+        .nav-full-width-icons .settings-links .utility-links {
+            text-align: right;
+            position: relative;
+            top: 3px;
+            z-index: 9;
+            display: inline;
+        }
+
+        .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+        }
+    }
+
+    button#settings-btn {
+        display: none;
+    }
 </style>	
 	
 	<script type="text/javascript">
@@ -120,6 +143,7 @@
 
         <div class="settings-links">
             <ul class="utility-links">
+                <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                 <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
             </ul>
         </div>
@@ -171,17 +195,16 @@
 <nav id="navigation" class="main-navigation">
     <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
         <li class="nav-item ">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
-
+            <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
         </li>
 
         <li class="nav-item">
             <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
         </li>
 
-        <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-        </li>
+		<li class="nav-item">
+			<a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+		</li>
 
         <li class="nav-item">
             <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
@@ -298,5 +321,18 @@
                                         <div class="container" > Copyright &copy;
                                         <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
 			<script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.3/js/cagov.core.min.js?ver=1.4.12"></script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"> </script>
+
+<script type="text/javascript"> function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); } </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>

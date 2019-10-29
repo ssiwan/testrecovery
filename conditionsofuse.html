@@ -98,7 +98,29 @@ scale=1.0">
 
         .brd-gray {
             border-color: gray;
+        }/*Setting button fix*/
+        @media (max-width: 767px) {
+            .nav-full-width-icons .utility-header .header-organization-banner {
+                width: 200px;
+                float: left;
+            }
+
+            .nav-full-width-icons .settings-links .utility-links {
+                text-align: right;
+                position: relative;
+                top: 3px;
+                z-index: 9;
+                display: inline;
+            }  .nav-full-width-icons .settings-links .utility-links a, .nav-full-width-icons .settings-links .utility-links button {
+                border: 1px solid #fff !important;
+                color: #fff !important;
+            }
         }
+
+button#settings-btn {
+    display: none;
+} 
+
     </style>
 
 </head>
@@ -120,6 +142,7 @@ scale=1.0">
 
                 <div class="settings-links">
                     <ul class="utility-links">
+                        <li><a href="translate.html"><span class="ca-gov-icon-globe" aria-hidden="true"></span> Translate</a></li>
                         <li><button id="settings-btn" data-toggle="collapse" href="#siteSettings" aria-expanded="false" class="collapsed"><span class="ca-gov-icon-gear" aria-hidden="true"></span> Settings</button></li>
                     </ul>
                 </div>
@@ -170,33 +193,32 @@ scale=1.0">
             <!-- Navigation Full Width with Icons -->
             <nav id="navigation" class="main-navigation megadropdown ">
                 <ul id="nav_list" class="top-level-nav nav-menu js-nav-menu">
-					        <li class="nav-item ">
-            <a href="fireincidents.html" class="first-level-link" aria-hidden="true"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+                    <li class="nav-item ">
+                        <a href="fireincidents.html" class="first-level-link"><span class="ca-gov-icon-fire" aria-hidden="true"></span>Wildfire Incidents </a>
+                    </li>
 
-        </li>
+                    <li class="nav-item">
+                        <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="resources.html#shelter" class="first-level-link"><span class="ca-gov-icon-house" aria-hidden="true"></span>Shelters/Housing </a>
-        </li>
+                    <li class="nav-item">
+                        <a href="http://quickmap.dot.ca.gov/" class="first-level-link" target="_blank"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="http://quickmap.dot.ca.gov/" class="first-level-link"><span class="ca-gov-icon-construction" aria-hidden="true"></span>Transportation Impacts</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="health.html" class="first-level-link"><span class="ca-gov-icon-medical-case" aria-hidden="true"></span>Health Services</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
+                    </li>
 
-        <li class="nav-item">
-            <a href="resources.html" class="first-level-link"><span class="ca-gov-icon-hand" aria-hidden="true"></span>Resources</a>
-        </li>
-
-        <li class="nav-item">
-            <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
-        </li>
-        <li class="nav-item">
-            <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
-        </li>
+                    <li class="nav-item">
+                        <a href="psps.html" class="first-level-link"><span class="ca-gov-icon-charge" aria-hidden="true"></span>Power Shutoffs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="preparedness.html" class="first-level-link"><span class="ca-gov-icon-check-list" aria-hidden="true"></span>Preparedness</a>
+                    </li>
 
                     <!--<li class="nav-item" id="nav-item-search">
                         <a href="javascript:;" class="first-level-link" id="accessible-menu-1572229058995-8"><span class="ca-gov-icon-search" aria-hidden="true"></span>Search</a>
@@ -243,105 +265,110 @@ scale=1.0">
         <main class="main-primary">
 
             <div class="section-default p-y-md"><div class="container"><h1 class="m-y-0">Conditions of Use</h1></div></div>
-			<div class="section">
-            <div class="container">
-<h2 style="color: #666666; background-color: #ffffff;">Use Policy</h2>
-<p style="color: #222222; background-color: #ffffff;">Thank you for visiting the State of California&#8217;s web site and reviewing our Use Policy. You should also be aware that the State has a Privacy Policy, also available on this web site. The State wants you to know about the collection, use, security, and access to information that may be obtained through use of the State&#8217;s web portal. By visiting this web site, you are accepting the policies and practices described in this Notice. This Notice covers the following topics:</p>
-<ul class="list-understated">
-<li><a href="#choice" style="color: #551a8b;">Personal Information and Choice</a></li>
-<li><a href="#children" style="color: #551a8b;">A Special Note about Children</a></li>
-<li><a href="#info" style="color: #551a8b;">Information Collected and How it is Used</a></li>
-<li><a href="#submit" style="color: #551a8b;">What Happens to Information You Submit to Us</a></li>
-<li><a href="#form" style="color: #551a8b;">Use of Internet Request for Assistance Form Information</a></li>
-<li><a href="#surveys" style="color: #551a8b;">Surveys</a></li>
-<li><a href="#email" style="color: #551a8b;">If You Send Us E-mail</a></li>
-<li><a href="#disclose" style="color: #551a8b;">Public Disclosure</a></li>
-<li><a href="#cookies" style="color: #551a8b;">Automatic Collection of Information/Cookies</a></li>
-<li><a href="#security" style="color: #551a8b;">Security</a></li>
-<li><a href="#links" style="color: #551a8b;">Links to Other Sites</a></li>
-<li><a href="#liability" style="color: #551a8b;">Limitation of Liability</a></li>
-<li><a href="#ownership" style="color: #551a8b;">Ownership</a></li>
-</ul>
-<p style="color: #222222; background-color: #ffffff;">Please note that this Use Policy is subject to change without notice, and that it reflects the State&#8217;s current business practices. This Use policy is dated December 7, 2000.</p>
-<p style="color: #222222; background-color: #ffffff;">Also note that each department within the State may have additional privacy and use policies specific to the mission and needs of their work. Be sure to review those policies as you access additional sites within the State.</p>
-<p><a id="choice" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">PERSONAL INFORMATION AND CHOICE</h3>
-<p style="color: #222222; background-color: #ffffff;">&#8220;Personal information&#8221; is information about a natural person that identifies or describes an individual, including, but not limited to, his or her name, social security number, physical description, home address, home telephone number, education, financial matters, and medical or employment history, readily identifiable to that specific individual. A domain name or Internet Protocol address is not considered personal information, however, it is considered &#8220;electronically collected personal information.&#8221;</p>
-<p style="color: #222222; background-color: #ffffff;">According to Government Code &sect; 11015.5., &#8220;electronically collected personal information&#8221; means any information that is maintained by an agency that identifies or describes an individual user, including, but not limited to, his or her name, social security number, physical description, home address, home telephone number, education, financial matters, medical or employment history, password, electronic mail address, and information that reveals any network location or identity, but excludes any information manually submitted to a State agency by a user, whether electronically or in written form, and information on or relating to individuals who are users, serving in a business capacity, including, but not limited to, business owners, officers, or principals of that business.</p>
-<p style="color: #222222; background-color: #ffffff;">&#8220;Electronically collected personal information&#8221; that we automatically collect includes your domain name or Internet Protocol address, and statistical information about which web pages you visit. If you voluntarily participate in an activity that asks for specific information (i.e., completing a request for assistance, personalizing the content of the web site, sending an e-mail, or participating in a survey) more detailed data will be collected. If you choose not to participate in these activities, your choice will in no way affect your ability to use any other feature of the web site.</p>
-<p style="color: #222222; background-color: #ffffff;">If any type of personal information is requested on the web site or volunteered by the user, State law, including the Information Practices Act of 1977, Government Code Section 11015.5., and the federal Privacy Act of 1974 may protect it. However, this information may be a public record once you provide it, and may be subject to public inspection and copying if not otherwise protected by federal or State law.</p>
-<p style="color: #222222; background-color: #ffffff;">Additionally, departments and agencies of the State of California under the authority of the Governor are required to adhere to the Privacy Policy which is also accessible on this web site.</p>
-<p><a id="children" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">A SPECIAL NOTE ABOUT CHILDREN</h3>
-<p style="color: #222222; background-color: #ffffff;">Children are not eligible to use services that require submission of personal information, and we require that minors (under the age of 18) do not submit any personal information to us. This includes submitting personal information to the State as part of a user profile or personalization profile. If you are a minor, you can use these services only if used together with your parents or guardians. If you are a minor, you should seek guidance from your parents.</p>
-<p style="color: #222222; background-color: #ffffff;">If the State decides to begin collecting personal information from children, it will notify parents that it is being requested, disclose the reasons for collecting it, and disclose our intended use of it. The State will seek parental consent before collecting any personally identifiable information. If it does collect it, parents may request information on the type of data being collected, view their child&#8217;s information, and, if they choose, prohibit the State from making further use of their child&#8217;s information. The State will not provide personal information about children to third parties.</p>
-<p><a id="info" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">INFORMATION COLLECTED AND HOW IT IS USED</h3>
-<p style="color: #222222; background-color: #ffffff;">We do collect personal information directly from individuals who volunteer to use some of our services. Collection of this information is required to deliver the specific services, but use of these services is voluntary.</p>
-<p style="color: #222222; background-color: #ffffff;">The information we automatically collect or store is used to improve the content of our web services and to help us understand how people are using our services. This information does not identify you personally and is used for gathering web site statistics. The information we automatically collect and store in our logs about your visit helps us to analyze our web site to continually improve the value of the materials available. Our web site logs do not identify a visitor by personal information, and we make no attempt to link other web sites with the individuals that browse the State&#8217;s web site.</p>
-<p style="color: #222222; background-color: #ffffff;">Government Code &sect; 11015.5.(a)(6) prohibits all state agencies from distributing or selling any electronically collected personal information, as defined above, about users to any third party without the permission of the user. The State does not sell any &#8220;electronically collected personal information.&#8221; Any distribution of &#8220;electronically collected personal information&#8221; will be solely for the purposes for which it was provided to us.</p>
-<p style="color: #222222; background-color: #ffffff;">The State may provide or distribute certain lists and statistical reports of regulatory information as provided by law, but no personal information is sold or distributed, and all relevant legal protections still apply to the State&#8217;s web sites.</p>
-<p><a id="submit" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">WHAT HAPPENS TO INFORMATION YOU SUBMIT TO US?</h3>
-<p style="color: #222222; background-color: #ffffff;">If you choose to submit information to us, the information will be transmitted through secure lines to our departmental database. Any private information will only be used for the purposes for which it was provided and will not be shared with another entity except as prescribed by law. Please see our Privacy Policy for additional information.</p>
-<p><a id="form" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">USE OF INTERNET REQUEST FOR ASSISTANCE FORM INFORMATION</h3>
-<p style="color: #222222; background-color: #ffffff;">Any information you provide to us will only be shared with entities involved in your case as necessary. Information you provide may be included with other consumers&#8217; information to be used for statistical reporting, trending data, and/or investigative actions. For example, we may need to retain information that becomes part of an enforcement action or consumer complaint case for a period of time after the closing date of the case.</p>
-<p style="color: #222222; background-color: #ffffff;">If you provide us with information regarding an issue that does not fall within our regulatory jurisdiction, we may refer your information to the appropriate local, State, or federal agency on your behalf.</p>
-<p><a id="surveys" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">SURVEYS</h3>
-<p style="color: #222222; background-color: #ffffff;">If during your visit to the State&#8217;s web site you participate in a survey or send an e-mail, the following additional information will be collected:</p>
-<ol style="color: #222222; margin: 1em 0px; padding: 0px 0px 0px 40px; background-color: #ffffff;">
-<li>The e-mail address and contents of the e-mail; and</li>
-<li>Information volunteered in response to the survey.</li>
-</ol>
-<p style="color: #222222; background-color: #ffffff;">The information collected is not limited to text characters and may include audio, video, and graphic information formats you send us.</p>
-<p style="color: #222222; background-color: #ffffff;">The information is retained in accordance with Government Code &sect; 11015.5.</p>
-<p><a id="email" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">IF YOU SEND US E-MAIL</h3>
-<p style="color: #222222; background-color: #ffffff;">You may choose to provide us with personal information, as in e-mail with a comment or question. We use the information to improve our service to you or to respond to your request. Sometimes we forward your e-mail to other State employees who may be better able to help you, and this staff may be employed by a different agency within the State. Except for authorized law enforcement investigations or, as required by law, we do not share our e-mail with any other organizations.</p>
-<p style="color: #222222; background-color: #ffffff;">We use your e-mail to respond appropriately. This may be to respond to you, to address issues you identify, to further improve our web site, or to forward the e-mail to another agency for appropriate action.</p>
-<p style="color: #222222; background-color: #ffffff;"><a id="disclose" style="color: #1f70a7;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">PUBLIC DISCLOSURE</h3>
-<p style="color: #222222; background-color: #ffffff;">In the State of California, laws exist to ensure that government is open and that the public has a right to access appropriate records and information possessed by State government. At the same time, there are exceptions to the public&#8217;s right to access public records. These exceptions serve various needs including maintaining the privacy of individuals. Both State and federal laws provide exceptions.</p>
-<p style="color: #222222; background-color: #ffffff;">All information collected at this site becomes public record that may be subject to inspection and copying by the public, unless an exemption in law exists. In the event of a conflict between this Use Policy and the Public Records Act, the Information Practices Act, or other law governing the disclosure of records, the Public Records Act, the Information Practices Act, or other applicable law will control.</p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">PERSONAL INFORMATION</h3>
-<p style="color: #222222; background-color: #ffffff;">Under Government Code &sect; 11015.5., if you choose, you may have any personal information collected about you discarded without reuse or distribution, provided we are contacted in a timely fashion.</p>
-<p><a id="cookies" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">AUTOMATIC COLLECTION OF INFORMATION/COOKIES</h3>
-<p style="color: #222222; background-color: #ffffff;">When you visit a State of California website, you should be aware that data linking your computer to a particular website (a &#8220;cookie&#8221;) may be created. Temporary cookies may be used when necessary to complete a transaction, to process data submitted to us online, to facilitate an ongoing Internet interaction, or to understand trends in the use of State websites. Cookies do not compromise your privacy or security. Using web browser settings, you can refuse the cookies or delete the cookie file from your computer by using any of the widely available methods.</p>
-<p><a id="security" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">SECURITY</h3>
-<p style="color: #222222; background-color: #ffffff;">The State, as developer and manager of this web site, has taken several steps to safeguard the integrity of its telecommunications and computing infrastructure, including but not limited to authentication, monitoring, auditing, and encryption. Security measures have been integrated into the design, implementation, and day-to-day practices of the entire State operating environment as part of its continuing commitment to risk management. This information should not be construed in any way as giving business, legal, or other advice, or warranting as fail proof, the security of information provided via the State&#8217;s supported web site. The technical standards governing security are enforced by the Department of Finance.</p>
-<p><a id="links" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">LINKS TO OTHER SITES</h3>
-<p style="color: #222222; background-color: #ffffff;">Our web site has links to sites we feel might be useful to you and which may provide services. When you link to another site, you are no longer on our site and are subject to the privacy policy of the new site.</p>
-<p style="color: #222222; background-color: #ffffff;">The State of California accepts no responsibility for the content or accessibility of the external websites or external documents linked to on this website.</p>
-<p style="color: #222222; background-color: #ffffff;">This web site and the information it contains are provided as a public service by the State of California. This system is monitored to ensure proper operation, to verify the functioning of applicable security features, and for comparable purposes. Anyone using this system expressly consents to such monitoring. Unauthorized attempts to modify any information stored on this system, to defeat or circumvent security features, or to utilize this system for other than its intended purposes are prohibited and may result in criminal prosecution.</p>
-<p><a id="liability" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">LIMITATION OF LIABILITY</h3>
-<p style="color: #222222; background-color: #ffffff;">The State attempts to maintain the highest accuracy of content on its web site. Any errors or omissions should be reported for investigation.</p>
-<p style="color: #222222; background-color: #ffffff;">The State makes no claims, promises, or guarantees about the absolute accuracy, completeness, or adequacy of the contents of this web site and expressly disclaims liability for errors and omissions in the contents of this web site. No warranty of any kind, implied, expressed, or statutory, including but not limited to the warranties of non-infringement of third party rights, title, merchantability, fitness for a particular purpose, and freedom from computer virus, is given with respect to the contents of this web site or its hyperlinks to other Internet resources. References or links in this web site to any specific commercial products, processes, or services, or the use of any trade, firm, or corporation name are for the information and convenience of the public, and do not constitute endorsement, recommendation, or favoring by the State of California, or its employees or agents.</p>
-<p style="color: #222222; background-color: #ffffff;">This Use Policy is subject to change without notice.</p>
-<p><a id="ownership" style="color: #1f70a7; background-color: #ffffff;"></a></p>
-<h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">OWNERSHIP</h3>
-<p style="color: #222222; background-color: #ffffff;">In general, information presented on this web site, unless otherwise indicated, is considered in the public domain. It may be distributed or copied as permitted by law. However, the State does make use of copyrighted data (e.g., photographs) which may require additional permissions prior to your use. In order to use any information on this web site not owned or created by the State, you must seek permission directly from the owning (or holding) sources. The State shall have the unlimited right to use for any purpose, free of any charge, all information submitted via this site except those submissions made under separate legal contract. The State shall be free to use, for any purpose, any ideas, concepts, or techniques contained in information provided through this site.</p>    
+            <div class="section">
+                <div class="container">
+                    <h2 style="color: #666666; background-color: #ffffff;">Use Policy</h2>
+                    <p style="color: #222222; background-color: #ffffff;">Thank you for visiting the State of California&#8217;s web site and reviewing our Use Policy. You should also be aware that the State has a Privacy Policy, also available on this web site. The State wants you to know about the collection, use, security, and access to information that may be obtained through use of the State&#8217;s web portal. By visiting this web site, you are accepting the policies and practices described in this Notice. This Notice covers the following topics:</p>
+                    <ul class="list-understated">
+                        <li><a href="#choice" style="color: #551a8b;">Personal Information and Choice</a></li>
+                        <li><a href="#children" style="color: #551a8b;">A Special Note about Children</a></li>
+                        <li><a href="#info" style="color: #551a8b;">Information Collected and How it is Used</a></li>
+                        <li><a href="#submit" style="color: #551a8b;">What Happens to Information You Submit to Us</a></li>
+                        <li><a href="#form" style="color: #551a8b;">Use of Internet Request for Assistance Form Information</a></li>
+                        <li><a href="#surveys" style="color: #551a8b;">Surveys</a></li>
+                        <li><a href="#email" style="color: #551a8b;">If You Send Us E-mail</a></li>
+                        <li><a href="#disclose" style="color: #551a8b;">Public Disclosure</a></li>
+                        <li><a href="#cookies" style="color: #551a8b;">Automatic Collection of Information/Cookies</a></li>
+                        <li><a href="#security" style="color: #551a8b;">Security</a></li>
+                        <li><a href="#links" style="color: #551a8b;">Links to Other Sites</a></li>
+                        <li><a href="#liability" style="color: #551a8b;">Limitation of Liability</a></li>
+                        <li><a href="#ownership" style="color: #551a8b;">Ownership</a></li>
+                    </ul>
+                    <p style="color: #222222; background-color: #ffffff;">Please note that this Use Policy is subject to change without notice, and that it reflects the State&#8217;s current business practices. This Use policy is dated December 7, 2000.</p>
+                    <p style="color: #222222; background-color: #ffffff;">Also note that each department within the State may have additional privacy and use policies specific to the mission and needs of their work. Be sure to review those policies as you access additional sites within the State.</p>
+                    <p><a id="choice" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">PERSONAL INFORMATION AND CHOICE</h3>
+                    <p style="color: #222222; background-color: #ffffff;">&#8220;Personal information&#8221; is information about a natural person that identifies or describes an individual, including, but not limited to, his or her name, social security number, physical description, home address, home telephone number, education, financial matters, and medical or employment history, readily identifiable to that specific individual. A domain name or Internet Protocol address is not considered personal information, however, it is considered &#8220;electronically collected personal information.&#8221;</p>
+                    <p style="color: #222222; background-color: #ffffff;">According to Government Code &sect; 11015.5., &#8220;electronically collected personal information&#8221; means any information that is maintained by an agency that identifies or describes an individual user, including, but not limited to, his or her name, social security number, physical description, home address, home telephone number, education, financial matters, medical or employment history, password, electronic mail address, and information that reveals any network location or identity, but excludes any information manually submitted to a State agency by a user, whether electronically or in written form, and information on or relating to individuals who are users, serving in a business capacity, including, but not limited to, business owners, officers, or principals of that business.</p>
+                    <p style="color: #222222; background-color: #ffffff;">&#8220;Electronically collected personal information&#8221; that we automatically collect includes your domain name or Internet Protocol address, and statistical information about which web pages you visit. If you voluntarily participate in an activity that asks for specific information (i.e., completing a request for assistance, personalizing the content of the web site, sending an e-mail, or participating in a survey) more detailed data will be collected. If you choose not to participate in these activities, your choice will in no way affect your ability to use any other feature of the web site.</p>
+                    <p style="color: #222222; background-color: #ffffff;">If any type of personal information is requested on the web site or volunteered by the user, State law, including the Information Practices Act of 1977, Government Code Section 11015.5., and the federal Privacy Act of 1974 may protect it. However, this information may be a public record once you provide it, and may be subject to public inspection and copying if not otherwise protected by federal or State law.</p>
+                    <p style="color: #222222; background-color: #ffffff;">Additionally, departments and agencies of the State of California under the authority of the Governor are required to adhere to the Privacy Policy which is also accessible on this web site.</p>
+                    <p><a id="children" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">A SPECIAL NOTE ABOUT CHILDREN</h3>
+                    <p style="color: #222222; background-color: #ffffff;">Children are not eligible to use services that require submission of personal information, and we require that minors (under the age of 18) do not submit any personal information to us. This includes submitting personal information to the State as part of a user profile or personalization profile. If you are a minor, you can use these services only if used together with your parents or guardians. If you are a minor, you should seek guidance from your parents.</p>
+                    <p style="color: #222222; background-color: #ffffff;">If the State decides to begin collecting personal information from children, it will notify parents that it is being requested, disclose the reasons for collecting it, and disclose our intended use of it. The State will seek parental consent before collecting any personally identifiable information. If it does collect it, parents may request information on the type of data being collected, view their child&#8217;s information, and, if they choose, prohibit the State from making further use of their child&#8217;s information. The State will not provide personal information about children to third parties.</p>
+                    <p><a id="info" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">INFORMATION COLLECTED AND HOW IT IS USED</h3>
+                    <p style="color: #222222; background-color: #ffffff;">We do collect personal information directly from individuals who volunteer to use some of our services. Collection of this information is required to deliver the specific services, but use of these services is voluntary.</p>
+                    <p style="color: #222222; background-color: #ffffff;">The information we automatically collect or store is used to improve the content of our web services and to help us understand how people are using our services. This information does not identify you personally and is used for gathering web site statistics. The information we automatically collect and store in our logs about your visit helps us to analyze our web site to continually improve the value of the materials available. Our web site logs do not identify a visitor by personal information, and we make no attempt to link other web sites with the individuals that browse the State&#8217;s web site.</p>
+                    <p style="color: #222222; background-color: #ffffff;">Government Code &sect; 11015.5.(a)(6) prohibits all state agencies from distributing or selling any electronically collected personal information, as defined above, about users to any third party without the permission of the user. The State does not sell any &#8220;electronically collected personal information.&#8221; Any distribution of &#8220;electronically collected personal information&#8221; will be solely for the purposes for which it was provided to us.</p>
+                    <p style="color: #222222; background-color: #ffffff;">The State may provide or distribute certain lists and statistical reports of regulatory information as provided by law, but no personal information is sold or distributed, and all relevant legal protections still apply to the State&#8217;s web sites.</p>
+                    <p><a id="submit" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">WHAT HAPPENS TO INFORMATION YOU SUBMIT TO US?</h3>
+                    <p style="color: #222222; background-color: #ffffff;">If you choose to submit information to us, the information will be transmitted through secure lines to our departmental database. Any private information will only be used for the purposes for which it was provided and will not be shared with another entity except as prescribed by law. Please see our Privacy Policy for additional information.</p>
+                    <p><a id="form" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">USE OF INTERNET REQUEST FOR ASSISTANCE FORM INFORMATION</h3>
+                    <p style="color: #222222; background-color: #ffffff;">Any information you provide to us will only be shared with entities involved in your case as necessary. Information you provide may be included with other consumers&#8217; information to be used for statistical reporting, trending data, and/or investigative actions. For example, we may need to retain information that becomes part of an enforcement action or consumer complaint case for a period of time after the closing date of the case.</p>
+                    <p style="color: #222222; background-color: #ffffff;">If you provide us with information regarding an issue that does not fall within our regulatory jurisdiction, we may refer your information to the appropriate local, State, or federal agency on your behalf.</p>
+                    <p><a id="surveys" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">SURVEYS</h3>
+                    <p style="color: #222222; background-color: #ffffff;">If during your visit to the State&#8217;s web site you participate in a survey or send an e-mail, the following additional information will be collected:</p>
+                    <ol style="color: #222222; margin: 1em 0px; padding: 0px 0px 0px 40px; background-color: #ffffff;">
+                        <li>The e-mail address and contents of the e-mail; and</li>
+                        <li>Information volunteered in response to the survey.</li>
+                    </ol>
+                    <p style="color: #222222; background-color: #ffffff;">The information collected is not limited to text characters and may include audio, video, and graphic information formats you send us.</p>
+                    <p style="color: #222222; background-color: #ffffff;">The information is retained in accordance with Government Code &sect; 11015.5.</p>
+                    <p><a id="email" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">IF YOU SEND US E-MAIL</h3>
+                    <p style="color: #222222; background-color: #ffffff;">You may choose to provide us with personal information, as in e-mail with a comment or question. We use the information to improve our service to you or to respond to your request. Sometimes we forward your e-mail to other State employees who may be better able to help you, and this staff may be employed by a different agency within the State. Except for authorized law enforcement investigations or, as required by law, we do not share our e-mail with any other organizations.</p>
+                    <p style="color: #222222; background-color: #ffffff;">We use your e-mail to respond appropriately. This may be to respond to you, to address issues you identify, to further improve our web site, or to forward the e-mail to another agency for appropriate action.</p>
+                    <p style="color: #222222; background-color: #ffffff;"><a id="disclose" style="color: #1f70a7;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">PUBLIC DISCLOSURE</h3>
+                    <p style="color: #222222; background-color: #ffffff;">In the State of California, laws exist to ensure that government is open and that the public has a right to access appropriate records and information possessed by State government. At the same time, there are exceptions to the public&#8217;s right to access public records. These exceptions serve various needs including maintaining the privacy of individuals. Both State and federal laws provide exceptions.</p>
+                    <p style="color: #222222; background-color: #ffffff;">All information collected at this site becomes public record that may be subject to inspection and copying by the public, unless an exemption in law exists. In the event of a conflict between this Use Policy and the Public Records Act, the Information Practices Act, or other law governing the disclosure of records, the Public Records Act, the Information Practices Act, or other applicable law will control.</p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">PERSONAL INFORMATION</h3>
+                    <p style="color: #222222; background-color: #ffffff;">Under Government Code &sect; 11015.5., if you choose, you may have any personal information collected about you discarded without reuse or distribution, provided we are contacted in a timely fashion.</p>
+                    <p><a id="cookies" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">AUTOMATIC COLLECTION OF INFORMATION/COOKIES</h3>
+                    <p style="color: #222222; background-color: #ffffff;">When you visit a State of California website, you should be aware that data linking your computer to a particular website (a &#8220;cookie&#8221;) may be created. Temporary cookies may be used when necessary to complete a transaction, to process data submitted to us online, to facilitate an ongoing Internet interaction, or to understand trends in the use of State websites. Cookies do not compromise your privacy or security. Using web browser settings, you can refuse the cookies or delete the cookie file from your computer by using any of the widely available methods.</p>
+                    <p><a id="security" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">SECURITY</h3>
+                    <p style="color: #222222; background-color: #ffffff;">The State, as developer and manager of this web site, has taken several steps to safeguard the integrity of its telecommunications and computing infrastructure, including but not limited to authentication, monitoring, auditing, and encryption. Security measures have been integrated into the design, implementation, and day-to-day practices of the entire State operating environment as part of its continuing commitment to risk management. This information should not be construed in any way as giving business, legal, or other advice, or warranting as fail proof, the security of information provided via the State&#8217;s supported web site. The technical standards governing security are enforced by the Department of Finance.</p>
+                    <p><a id="links" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">LINKS TO OTHER SITES</h3>
+                    <p style="color: #222222; background-color: #ffffff;">Our web site has links to sites we feel might be useful to you and which may provide services. When you link to another site, you are no longer on our site and are subject to the privacy policy of the new site.</p>
+                    <p style="color: #222222; background-color: #ffffff;">The State of California accepts no responsibility for the content or accessibility of the external websites or external documents linked to on this website.</p>
+                    <p style="color: #222222; background-color: #ffffff;">This web site and the information it contains are provided as a public service by the State of California. This system is monitored to ensure proper operation, to verify the functioning of applicable security features, and for comparable purposes. Anyone using this system expressly consents to such monitoring. Unauthorized attempts to modify any information stored on this system, to defeat or circumvent security features, or to utilize this system for other than its intended purposes are prohibited and may result in criminal prosecution.</p>
+                    <p><a id="liability" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">LIMITATION OF LIABILITY</h3>
+                    <p style="color: #222222; background-color: #ffffff;">The State attempts to maintain the highest accuracy of content on its web site. Any errors or omissions should be reported for investigation.</p>
+                    <p style="color: #222222; background-color: #ffffff;">The State makes no claims, promises, or guarantees about the absolute accuracy, completeness, or adequacy of the contents of this web site and expressly disclaims liability for errors and omissions in the contents of this web site. No warranty of any kind, implied, expressed, or statutory, including but not limited to the warranties of non-infringement of third party rights, title, merchantability, fitness for a particular purpose, and freedom from computer virus, is given with respect to the contents of this web site or its hyperlinks to other Internet resources. References or links in this web site to any specific commercial products, processes, or services, or the use of any trade, firm, or corporation name are for the information and convenience of the public, and do not constitute endorsement, recommendation, or favoring by the State of California, or its employees or agents.</p>
+                    <p style="color: #222222; background-color: #ffffff;">This Use Policy is subject to change without notice.</p>
+                    <p><a id="ownership" style="color: #1f70a7; background-color: #ffffff;"></a></p>
+                    <h3 style="color: #333333; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #bcbcbc; background-color: #ffffff;">OWNERSHIP</h3>
+                    <p style="color: #222222; background-color: #ffffff;">In general, information presented on this web site, unless otherwise indicated, is considered in the public domain. It may be distributed or copied as permitted by law. However, the State does make use of copyrighted data (e.g., photographs) which may require additional permissions prior to your use. In order to use any information on this web site not owned or created by the State, you must seek permission directly from the owning (or holding) sources. The State shall have the unlimited right to use for any purpose, free of any charge, all information submitted via this site except those submissions made under separate legal contract. The State shall be free to use, for any purpose, any ideas, concepts, or techniques contained in information provided through this site.</p>
                 </div>
 
-                
-              
 
-                    </div>
 
-                <span class="return-top hidden-print"></span>
-</main>
+
+            </div>
+
+            <span class="return-top hidden-print"></span>
+        </main>
     </div> <!-- #main-content -->
     <!-- Global Footer -->
-    <footer id="footer" class="global-footer hidden-print"><div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links" ><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
-                                                    <!-- Copyright Statement -->
-                                        <div class="copyright">
-                                        <div class="container" > Copyright &copy;
-                                        <script>document.write(new Date().getFullYear())</script> State of California </div></div></footer>	
+    <footer id="footer" class="global-footer hidden-print">
+        <div class="container footer-menu"><div class="group"><div class="three-quarters"><ul class="footer-links"><li><a href="#skip-to-content">Back to Top</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="conditionsofuse.html">Conditions of Use</a></li><li><a href="privacypolicy.html">Privacy Policy</a></li><li><a href="disclaimer.html">Disclaimer</a></li></ul></div><div class="quarter"></div></div></div>
+        <!-- Copyright Statement -->
+        <div class="copyright">
+            <div class="container">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> State of California
+            </div>
+        </div>
+    </footer>
     <script type="text/javascript" src="https://california.azureedge.net/cdt/statetemplate/5.5.8/js/cagov.core.min.js"></script>
 
     <script>
@@ -350,6 +377,17 @@ scale=1.0">
 
 
     </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element'); }</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21970760-40"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-21970760-40');
+</script>
 </body>
 </html>
